@@ -2,7 +2,7 @@
   <img width="50%" src="images/merits-logo.png" alt="Merits Logo">
 </div>
 
-<h6 align="center">**_Merits_** is a place for programmers and developers to create a resume that will put their work, experience and skills on display. **_Merits_** will also allow users to browse and search through existing users and projects.</h6>
+<h6 align="center"><em>Merits</em> is a place for programmers and developers to create a resume that will put their work, experience and skills on display. <em>Merits</em> will also allow users to browse and search through existing users and projects.</h6>
 
 ## Features
 
