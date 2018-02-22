@@ -1,4 +1,5 @@
-const User {
+const User = {
+  _Id: string,
   firstName: string,
   lastName: string,
   email: string,
@@ -18,33 +19,43 @@ const User {
     github: string,
     twitter: string
   },
-  education: {
-    dateCompletion: number,
-    current: boolean,
-    institutionName: string,
-    fieldOfStudy: string,
-    highestDeg: string,
-    comments: string
-  },
-  experience: {
-    dateStart: number,
-    dateCompletion: number,
-    current: boolean,
-    companyName: string,
-    title: string,
-    description: string
-  },
+  projects: array,
+  experience: array,
+  education: array,
   skills: {
     languages: array,
     otherSkills: array
   },
-  projects: array,
-}
+  jwt: string
+};
 
-const Projects {
+const Projects = {
   userId: string,
+  projId: string,
   title: string,
   description: string,
   url: string,
   img: string
-}
+};
+
+const Education = {
+  userId: string,
+  edId: string,
+  dateCompletion: number,
+  current: boolean,
+  institutionName: string,
+  fieldOfStudy: string,
+  highestDeg: string,
+  comments: string
+};
+
+const Experience = {
+  userId: string,
+  expId: string,
+  dateStart: number,
+  dateCompletion: number,
+  current: boolean,
+  companyName: string,
+  title: string,
+  description: string
+};
