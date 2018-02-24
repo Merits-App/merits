@@ -5,5 +5,11 @@
     background-image: url(../../../../assets/img/hero.jpg);
     background-size: cover;
     background-position: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-logo{
+    height: 50%;
+    width: auto;
 }
