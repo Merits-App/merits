@@ -3,3 +3,26 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+.font-light{
+    font-weight: 300;
+}
+.font-reg{
+    font-weight: 400;
+}
+.font-med{
+    font-weight: 500;
+}
+.font-semi-bold{
+    font-weight: 600;
+}
+.font-bold{
+    font-weight: 700;
+}
+.font-ex-bold{
+    font-weight: 800;
+}
+.form-text{
+    font-size: 15pt;
+    color: #C6C6C6;
+    font-weight: 300;
+}
