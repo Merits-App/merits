@@ -1,0 +1,13 @@
+.grid-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hero hero hero hero hero hero hero hero hero hero hero hero hero hero";
+}
+.hero-container{
+    grid-area: hero;
+    height: 350px;
+    /* border: 1px dashed red; */
+}
