@@ -4,10 +4,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "hero hero hero hero hero hero hero hero hero hero hero hero hero hero";
+    "hero hero hero hero hero hero hero hero hero hero hero hero hero hero"
+    ". . form form form form form form form form form form . ."
 }
 .hero-container{
     grid-area: hero;
     height: 350px;
     /* border: 1px dashed red; */
+}
+.register-form-container{
+    grid-area: form;
+    border: 1px dashed red;
 }
