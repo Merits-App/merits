@@ -8,10 +8,11 @@ import { ProfileComponent } from './components/profile/profile.component';
 
 
 const Routes: Routes = [
-    { 
-        path: '', 
-        redirectTo: '/app-home', 
-        pathMatch: 'full' },
+  { 
+     path: '', 
+     redirectTo: '/app-home', 
+     pathMatch: 'full' 
+  },
   {
       path: 'app-home',
       component: HomeComponent
