@@ -1,0 +1,13 @@
+.profile-grid-container{
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px dashed red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav . . . . . ."
+}
+.side-nav{
+    grid-area: nav;
+    background-color: #424242;
+}
