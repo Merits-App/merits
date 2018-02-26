@@ -7,7 +7,7 @@ RUN mkdir -p /usr/src/app
 # Change directory so that our commands run inside this new directory
 WORKDIR /usr/src/app
 
-# Copy dependency definitions
+# Copy dependency definitionsg
 COPY package.json /usr/src/app
 
 # Install dependecies
@@ -21,3 +21,5 @@ EXPOSE 4200
 
 # Serve the app
 CMD ["npm", "start"]
+
+ENV COMPOSE_TLS_VERSION=TLSv1_2

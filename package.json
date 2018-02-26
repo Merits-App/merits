@@ -1,5 +1,5 @@
 {
-  "name": "merits-express-server",
+  "name": "express-server",
   "version": "1.0.0",
   "description": "resume template app",
   "main": "server.js",

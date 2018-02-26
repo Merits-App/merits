@@ -1,33 +1,22 @@
-version: '1'
+version: '2'
 services:
 # one service per file to be accessed by docker
   front-end: 
     build: './front-end'
-    image:  'merits:front-end'
-    #env_file:.env
-    volumes:
-    - ./front-end/src/app
+#image:  'merits:front-end'
+#    volumes:
+#    - ./front-end/src/app
     ports:
+      - "4200:4200"
       - "8080:4200"
-  
-  #database
-#     build: "to be determined later....
 
+  express-server:
+    build: "."
+   # image: "merits:express-server"
+    ports:
+    - "8000:8000"
 
+  # mongodb:
+  #   image: "merits:mongodb"
+  #   ports: "27017:27017"
 
-  #apiserver:
-#     build:'./(to be determined and edited later...)'
-#     image: "merits:apiserver"
-#     env_file: .env
-#     working_dir: /home/node/server
-#     depends_on: 
-#       - postgres
-#       - migrations
-#     networks:
-#       - dbnet
-#       - appnet
-#     ports:
-#       - "3000:3000"
-#     volumes:
-#       - ./server:/home/node/server
-#     entrypoint: "/home/node/server/scripts/entrypoint.sh":
