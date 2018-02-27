@@ -1,3 +1,26 @@
-<p>
-  about works!
-</p>
+<div ng-app="">
+
+              <p>About: </p>
+              <p>
+                <input type="text" ng-model="firstName" placeholder="First Name">
+                <input type="text" ng-model="lastName" placeholder="Last Name"><br><br>
+                <input type="text" ng-model="title" placeholder="Title"><br><br>
+                <input type="text" ng-model="city" placeholder="City">
+                <select name="state" id="state" ng-model="data.state">
+                    <option>--State--</option>
+                    <option>PA</option>
+                    <option>CA</option>
+                    <option>PH</option>
+                  </select>
+                  <input type="text" ng-model="phone" placeholder="Phone"><br><br>
+                  <input type="text" ng-model="email" placeholder="Email">
+                  <input type="text" ng-model="website" placeholder="Website"><br><br>
+                  <textarea type="text" ng-model="infoAbout" maxlength="500" placeholder="Tell the World a Little About You!"></textarea>
+              </p>
+              </div>
+    <div>
+      <label>Social Media </label><br><br>
+        <input type="text" ng-model="twitter" placeholder="Twitter"><br><br>
+        <input type="text" ng-model="linkedIn" placeholder="LinkedIn"><br><br>
+        <input type="text" ng-model="faceBook" placeholder="Facebook">
+    </div>
