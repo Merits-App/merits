@@ -9,8 +9,7 @@
 }
 .hero-container{
     grid-area: hero;
-    height: 350px;
-    /* border: 1px dashed red; */
+    border: 1px dashed red;
 }
 .register-form-container{
     grid-area: form;
