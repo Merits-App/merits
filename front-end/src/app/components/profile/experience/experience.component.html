@@ -1,51 +1,35 @@
-<p>
-  experience works!
-</p>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Experience</title>
-</head>
+<div ng-app="">
 
-<body>
-  <div ng-app="">
-
-    <p>Experience: </p>
-    <p>
-      <input type="text" ng-model="institute-name" placeholder="Name of Institution">
-    </p>
-    <p>
-      <input type="text" ng-model="fieldOfStudy" placeholder="Field of Study">
-    <select name="degreeSelect" id="degreeSelect" ng-model="data.degreeSelect">
-      <option>----Degree---</option>
-      <option>Masters</option>
-      <option>Under Graduate</option>
-      <option>High School</option>
-    </select>
-    <br>
-    <p><label>Date of completion</label><br>
-    <select name="datestart" id="datestart" ng-model="data.dateStart">
-        <option>MM</option>
-        <option>Jan</option>
-        <option>Feb</option>
-        <option>March</option>
+      <p>Experience: </p>
+      <p>
+        <input type="text" ng-model="institute-name" placeholder="Name of Institution">
+      </p>
+      <p>
+        <input type="text" ng-model="fieldOfStudy" placeholder="Field of Study">
+      <select name="degreeSelect" id="degreeSelect" ng-model="data.degreeSelect">
+        <option>----Degree---</option>
+        <option>Masters</option>
+        <option>Under Graduate</option>
+        <option>High School</option>
       </select>
-      <select name="endstart" id="endstart" ng-model="data.endStart">
-          <option>YYYY</option>
-          <option>2000</option>
-          <option>2001</option>
-          <option>2002</option>
-        </select></p>
-  <label>Current : <input type="checkbox" ng-model="current"></label><br/>
-    <p>
-      <textarea type="text" ng-model="addiInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
-    </p>
+      <br>
+      <p><label>Date of completion</label><br>
+      <select name="datestart" id="datestart" ng-model="data.dateStart">
+          <option>MM</option>
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>March</option>
+        </select>
+        <select name="endstart" id="endstart" ng-model="data.endStart">
+            <option>YYYY</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+          </select></p>
+    <label>Current : <input type="checkbox" ng-model="current"></label><br/>
+      <p>
+        <textarea type="text" ng-model="addiInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+      </p>
 
 
-  </div>
-</body>
-
-</html>
+    </div>
