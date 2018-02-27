@@ -1,0 +1,31 @@
+.footer{
+    width: 100%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo{
+    border: 1px dashed yellow;
+    height: 100px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    height: 100%;
+}
+.social-icons{
+    border: 1px dashed lime;
+    display: flex;
+    justify-content: center;
+}
+.social-circle{
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
