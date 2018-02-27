@@ -6,8 +6,8 @@
     flex-direction: column;
 }
 .logo{
-    border: 1px dashed yellow;
-    height: 100px;
+    /* border: 1px dashed yellow; */
+    height: 75px;
     margin: 20px 0px;
     display: flex;
     justify-content: center;
@@ -16,9 +16,10 @@
     height: 100%;
 }
 .social-icons{
-    border: 1px dashed lime;
+    /* border: 1px dashed lime; */
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .social-circle{
     height: 35px;
@@ -28,4 +29,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #424242;
+    margin: 0px 20px;
 }
