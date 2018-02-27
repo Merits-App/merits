@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.font-light{
+    font-weight: 300;
+}
+.font-reg{
+    font-weight: 400;
+}
+.font-med{
+    font-weight: 500;
+}
+.font-semi-bold{
+    font-weight: 600;
+}
+.font-bold{
+    font-weight: 700;
+}
+.font-ex-bold{
+    font-weight: 800;
+}
+.form{
+    margin: 0;
+    width: 100%;
+    background-color: rgba(255,184,8,0.85);
+    border-radius: 5px;
+    padding: 30px 30px 20px 30px;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.35);
+}
+.form-input{
+    width: 99%;
+    margin-bottom: 10px;
+    font-size: 15pt;
+    font-weight: 300;
+    border-radius: 2.5px;
+    border: none;
+    padding: 0px;
+    padding-left: 10px;
+}
+.form-input-label{
+    font-size: 15pt;
+    font-weight: 300;
+    color: #fff;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 1px;
+}
