@@ -6,13 +6,18 @@
     grid-template-areas: 
     "hero hero hero hero hero hero hero hero hero hero hero hero hero hero"
     ". . form form form form form form form form form form . ."
+    "footer footer footer footer footer footer footer footer footer footer footer footer footer footer "
 }
 .hero-container{
     grid-area: hero;
-    height: 350px;
-    /* border: 1px dashed red; */
+    border: 1px dashed red;
 }
 .register-form-container{
     grid-area: form;
     border: 1px dashed red;
+    height: 200px;
+}
+.footer-container{
+    grid-area: footer;
+    border: 1px dashed blue;
 }
