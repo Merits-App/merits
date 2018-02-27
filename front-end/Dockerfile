@@ -1,5 +1,5 @@
 # Create image based on the official Node 6 image from dockerhub
-FROM node:6
+FROM node:8
 
 # Create a directory where our app will be placed
 RUN mkdir -p /usr/src/app
@@ -20,6 +20,5 @@ COPY . /usr/src/app
 EXPOSE 4200
 
 # Serve the app
-CMD ["npm", "start"]
+CMD ["ng", "serve"]
 
-ENV COMPOSE_TLS_VERSION=TLSv1_2

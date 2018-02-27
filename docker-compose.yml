@@ -1,20 +1,31 @@
-version: '2'
+version: "2"
+
 services:
 # one service per file to be accessed by docker
+  
   front-end: 
     build: './front-end'
-#image:  'merits:front-end'
-#    volumes:
-#    - ./front-end/src/app
+    image: "node:8"
+    env_file: .env
+    working_dir: ./front-end
+    image: 'merits:front-end'
+    volumes:
+      - ./front-end/src/app
     ports:
       - "4200:4200"
-      - "8080:4200"
 
   express-server:
-    build: "."
-   # image: "merits:express-server"
+    build: "./"
+    image: "node:8"
+    env_file: .env
+    working_dir: ./
+    image: "merits:express-server"
+    volumes:
+      -./home/node/server
     ports:
-    - "8000:8000"
+    - "3000:3000"
+
+  
 
   # mongodb:
   #   image: "merits:mongodb"
