@@ -5,15 +5,16 @@ services:
     build: './front-end'
     ports: 
       - '4200:4200'
+      - '49153:49153'
     volumes:
-      - './front-end:/home/front-end'
+      - './front-end:/usr/src/app'
 
   express-server:
     build: '.'
     ports: 
-      - '3000:3000'
+      - '3000:8080'
     volumes:
-      - '.:/home/server'
+      - '.:/home/node/server'
     
 
 
