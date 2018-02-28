@@ -1,0 +1,38 @@
+.title-section{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.inputs{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-areas: 
+    ". fname fname lname lname ."
+    ". mail mail mail mail ."
+    ". create create create create ."
+    ". confirm confirm confirm confirm ."
+    ". city city city state ."
+}
+.first-name{
+    grid-area: fname;
+}
+.last-name{
+    grid-area: lname;
+}
+.e-mail{
+    grid-area: mail;
+}
+.create{
+    grid-area: create;
+}
+.confirm{
+    grid-area: confirm;
+}
+.city{
+    grid-area: city;
+}
+.state{
+    grid-area: state
+}
