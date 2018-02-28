@@ -34,13 +34,14 @@ body{
 .form-input{
     width: 100%;
     /* margin-bottom: 10px; */
-    font-size: 15pt;
+    font-size: 12pt;
     font-weight: 300;
-    border-radius: 2.5px;
+    border-radius: 5px;
     border: none;
     padding: 0px;
     /* padding-left: 10px; */
     /* margin: 10px 10px; */
+    padding: 5px;
 }
 .form-input-label{
     font-size: 15pt;

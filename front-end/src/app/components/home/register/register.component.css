@@ -2,6 +2,7 @@
     color: #fff;
     text-align: center;
     width: 100%;
+    padding: 20px 0px;
 }
 .inputs{
     display: grid;
@@ -35,4 +36,8 @@
 }
 .state{
     grid-area: state
+}
+.button-section{
+    text-align: center;
+    padding: 20px 0px;
 }
