@@ -1,24 +1,13 @@
-# Create image based on the official Node 6 image from dockerhub
+#Create an image
 FROM node:8
 
-# Create a directory where our app will be placed
-RUN mkdir -p /usr/src/app
 
-# Change directory so that our commands run inside this new directory
+RUN mkdir -p usr/src/app
 WORKDIR /usr/src/app
 
-# Copy dependency definitionsg
-COPY package.json /usr/src/app
-
-# Install dependecies
+COPY package.json  /usr/src/app
 RUN npm install
+EXPOSE 4200 45153
 
-# Get all the code needed to run the app
-COPY . /usr/src/app
-
-# Expose the port the app runs in
-EXPOSE 4200
-
-# Serve the app
-CMD ["ng", "serve"]
+CMD ["npm" "start"]
 
