@@ -3,7 +3,6 @@
 }
 
 h1 {
-
   font-size: 3em;
   margin: 0;
   padding: 0;
@@ -22,8 +21,8 @@ h1 {
 
 .placeholder {
   position: relative;
-  width: 225px;
-  height: 225px;
+  width: 210px;
+  height: 210px;
   margin: 10px;
   text-align: center;
   padding: 20px;
@@ -66,8 +65,16 @@ img {
   height: 100%;
   transition: all .6s;
   pointer-events: none;
-  background-color: rgba(255, 255, 255, .8);
   opacity: 0;
+}
+
+.color {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .8);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .icon {
