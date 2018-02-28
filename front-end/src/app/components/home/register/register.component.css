@@ -39,5 +39,21 @@
 }
 .button-section{
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 0px 50px 0px;
+}
+button{
+    font-size: 13pt;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    color: #757575;
+    cursor: pointer;
+}
+.form{
+    margin-bottom: 100px;
+}
+select{
+    font-size: 13px;
+    padding: 5px 15px;
 }
