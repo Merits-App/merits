@@ -42,6 +42,7 @@
     padding: 20px 0px 50px 0px;
 }
 button{
+    font-family: 'Montserrat', sans-serif;
     font-size: 13pt;
     padding: 5px 15px;
     border-radius: 5px;
@@ -54,6 +55,14 @@ button{
     margin-bottom: 100px;
 }
 select{
-    font-size: 13px;
-    padding: 5px 15px;
+    font-size: 16px;
+    /* padding: 5px 15px; */
+    border: none;
+    font-family: 'Montserrat', sans-serif;
 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #C6C6C6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-indent: 10px;
+  }

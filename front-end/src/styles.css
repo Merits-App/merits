@@ -40,7 +40,8 @@ body{
     border: none;
     /* padding-left: 10px; */
     /* margin: 10px 10px; */
-    padding: 5px;
+    /* padding: 5px; */
+    height: 30px;
 }
 .form-input-label{
     font-size: 15pt;
