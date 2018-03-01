@@ -10,7 +10,7 @@ WORKDIR /home/node/server
 # Copy dependency definitions
 COPY package.json /home/node/server
 
-# Install dependecies
+# Install dependnecies
 RUN npm install
 
 # Get all the code needed to run the app

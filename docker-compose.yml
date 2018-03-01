@@ -12,7 +12,7 @@ services:
   express-server:
     build: '.'
     ports: 
-      - '3000:8080'
+      - '3000:8000'
     volumes:
       - '.:/home/node/server'
     
