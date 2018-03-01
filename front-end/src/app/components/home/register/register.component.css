@@ -54,16 +54,3 @@ button{
 .form{
     margin-bottom: 100px;
 }
-select{
-    font-size: 16px;
-    /* padding: 5px 15px; */
-    border: none;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #fff;
-}
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #C6C6C6;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-indent: 10px;
-  }
