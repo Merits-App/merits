@@ -14,8 +14,8 @@
 }
 .register-form-container{
     grid-area: form;
-    border: 1px dashed red;
-    height: 200px;
+    /* border: 1px dashed red; */
+    /* height: 200px; */
 }
 .footer-container{
     grid-area: footer;
