@@ -1,0 +1,23 @@
+.navStype {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #424242;
+  color: #fff;
+  text-align: center;
+}
+.img-round {
+  width: 200px;
+  border-radius: 80%;
+  align-self: center;
+}
+.navLinks{
+-ms-flex-line-pack: center;
+color: rgba(255,184,8,0.85);
+
+}
+a{
+  color: white;
+  text-decoration: none;
+}
