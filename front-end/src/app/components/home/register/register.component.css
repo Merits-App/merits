@@ -59,6 +59,7 @@ select{
     /* padding: 5px 15px; */
     border: none;
     font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #C6C6C6;
