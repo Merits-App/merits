@@ -2,3 +2,20 @@
 display: flex;
 flex-direction: column;
 }
+.social-icons{
+    /* border: 1px dashed lime; */
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+.social-circle{
+    height: 35px;
+    width: 35px;
+    background-color: rgb(88, 86, 86);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0px 20px;
+}
