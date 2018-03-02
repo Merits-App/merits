@@ -10,11 +10,11 @@ services:
       - './front-end:/usr/src/app'
 
   express-server:
-    build: '.'
+    build: './server'
     ports: 
       - '3000:8000'
     volumes:
-      - '.:/home/node/server'
+      - './server:/home/node/server'
     
 
 
