@@ -45,7 +45,6 @@ body{
     -webkit-margin-before: 0em;
     -webkit-margin-after: 1px;
 }
-<<<<<<< HEAD
 .textarea-styled {
 	width: 400px;
 	height: 100px;
@@ -56,7 +55,6 @@ body{
 	background-position: bottom right;
 	background-repeat: no-repeat;
 }
-=======
 ::-webkit-input-placeholder {
     color: #C6C6C6;
     font-family: 'Montserrat', sans-serif;
@@ -69,4 +67,3 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
 }
->>>>>>> upstream/development
