@@ -54,3 +54,6 @@ button{
 .form{
     margin-bottom: 100px;
 }
+input:focus {
+    outline: none;
+}

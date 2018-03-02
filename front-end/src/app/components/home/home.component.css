@@ -15,8 +15,10 @@
 }
 .search-container{
     grid-area: search;
-    border: 1px dashed red;
-    height: 100px;
+    /* border: 1px dashed red; */
+    /* height: 100px; */
+    margin-bottom: 60px;
+    border-radius: 5px;
 }
 .register-form-container{
     grid-area: form;
