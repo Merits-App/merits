@@ -53,10 +53,8 @@ button{
 }
 .form{
     margin-bottom: 100px;
-<<<<<<< HEAD
-=======
+
 }
 input:focus {
     outline: none;
->>>>>>> upstream/development
 }

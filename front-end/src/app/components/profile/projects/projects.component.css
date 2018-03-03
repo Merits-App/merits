@@ -15,7 +15,7 @@ h1 {
 
 .proj-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -26,6 +26,7 @@ h1 {
   margin: 10px;
   text-align: center;
   padding: 20px;
+  box-shadow: 1px 1px 4px -1px #424242;
 }
 
 .placeholder:hover {
@@ -63,31 +64,39 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all .6s;
-  pointer-events: none;
+  transition: all .4s;
   opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
 }
 
 .color {
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(220, 220, 220, .8);
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.icon {
-  height: 20px;
-  width: 20px;
-  background-color: #cc0000;
+svg {
+  color: #424242;
   position: absolute;
   right: 10px;
   bottom: 10px;
-  transition: all .6s;
+  transform: scale(1.8);
+  transform-origin: bottom right;
+  transition: all .3s;
 }
 
-.show {
+svg:hover {
+  cursor: pointer;
+  transform: scale(2);
+}
+
+/* .show {
   animation-duration: .6s;
   animation-name: fadeIn;
   animation-fill-mode: forwards;
@@ -117,4 +126,4 @@ img {
   100% {
     opacity: 0;
   }
-}
+} */

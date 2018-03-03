@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
   // Properties
 
+  show = false;
+
   // Methods
   constructor() { }
 
@@ -15,16 +17,9 @@ export class ProjectsComponent implements OnInit {
 
   }
 
-  show($event) {
-    // e.srcElement.children[1].classList.add('show');
-    // e.srcElement.children[1].classList.remove('hide');
-    console.log('show');
-  }
-
-  hide($event) {
-    // e.srcElement.children[1].classList.add('show');
-    // e.srcElement.children[1].classList.remove('hide');
-    console.log('hide');
+  toggle() {
+    this.show = !this.show;
+    console.log(this);
   }
 
 }

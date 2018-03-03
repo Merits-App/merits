@@ -1,72 +1,83 @@
 <div class="projects">
   <div class="comp-header">
     <h1>Projects</h1>
-    <i class="fas fa-eye"></i>
-    <i class="fas fa-eye hidden"></i>
+    <!-- <i class="fas fa-eye"></i>
+    <i class="fas fa-eye hidden"></i> -->
   </div>
   <div class="proj-content">
-    <div class="placeholder" (mouseenter)="show($event)" (mouseleave)="hide($event)">
-      <img src="../../../../assets/img/placeholder-1.jpg" alt="project des">
-      <div class="overlay hidden">
-        <h2>Project One</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
-        <div class="icon"></div>
-        <div class="color"></div>
-      </div>
-    </div>
-    <div class="placeholder" (mouseenter)="show($event)" (mouseleave)="hide($event)">
+
+    <div class="placeholder" (mouseenter)="toggle()">
       <img src="../../../../assets/img/placeholder-2.jpg" alt="project des">
-      <div class="overlay">
+      <div class="overlay" *ngIf="show">
+        <div class="color"></div>
         <h2>Project Two</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
-        <div class="icon"></div>
-        <div class="color"></div>
+        <i class="fas fa-edit"></i>
       </div>
      </div>
-     <div class="placeholder" (mouseenter)="show($event)" (mouseleave)="hide($event)">
+
+     <div class="placeholder" (mouseenter)="toggle()">
       <img src="../../../../assets/img/placeholder-3.jpg" alt="project des">
-      <div class="overlay">
+      <div class="overlay" *ngIf="show">
+        <div class="color"></div>
         <h2>Project Three</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
-        <div class="icon"></div>
-        <div class="color"></div>
+        <i class="fas fa-edit"></i>
       </div>
      </div>
-     <div class="placeholder" (mouseenter)="show($event)" (mouseleave)="hide($event)">
+
+     <div class="placeholder" (mouseenter)="toggle()">
       <img src="../../../../assets/img/placeholder-4.jpg" alt="project des">
-      <div class="overlay">
+      <div class="overlay" *ngIf="show">
+        <div class="color"></div>
         <h2>Project Four</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
-        <div class="icon"></div>
-        <div class="color"></div>
+        <i class="fas fa-edit"></i>
       </div>
      </div>
-     <div class="placeholder" (mouseenter)="show($event)" (mouseleave)="hide($event)">
+
+     <div class="placeholder" (mouseenter)="toggle()">
       <img src="../../../../assets/img/placeholder-5.jpg" alt="project des">
-      <div class="overlay">
+      <div class="overlay" *ngIf="show">
+        <div class="color"></div>
         <h2>Project Five</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
-        <div class="icon"></div>
-        <div class="color"></div>
+        <i class="fas fa-edit"></i>
       </div>
      </div>
-     <div class="placeholder" (mouseenter)="show($event)" (mouseleave)="hide($event)">
-      <img src="../../../../assets/img/placeholder-6.jpg" alt="project des">
-      <div class="overlay">
-        <div class="color"></div>
-        <h2>Project Six</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
-        <div class="icon"></div>
-      </div>
-     </div>
-     <div class="placeholder" (mouseenter)="show($event)" (mouseleave)="hide($event)">
-      <img src="../../../../assets/img/placeholder-6.jpg" alt="project des">
-      <div class="overlay">
-        <div class="color"></div>
-        <!-- <h2>{{ project.title }}</h2>
-        <p>{{ project.description }}</p> -->
-        <div class="icon"></div>
-      </div>
-     </div>
+
+     <div class="placeholder" (mouseenter)="toggle()">
+        <img src="../../../../assets/img/placeholder-3.jpg" alt="project des">
+        <div class="overlay" *ngIf="show">
+          <div class="color"></div>
+          <h2>Project Three</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
+          <i class="fas fa-edit"></i>
+        </div>
+       </div>
+
   </div>
 </div>
+
+
+
+  <!-- loop through projects and populate component from DB -->
+  <!-- <div *ngFor="let project of projects" class="proj-content"> -->
+
+    <!-- <div class="placeholder" (mouseenter)="toggle()" (mouseleave)="toggle()"> -->
+      <!-- base64 string of saved img in DB -->
+      <!-- <div>{{ project.image }}</div> -->
+      <!-- project info for overlay -->
+      <!-- <div class="overlay" *ngIf="show"> -->
+        <!-- project link and title  -->
+        <!-- <a href="{{ project.link }}"><h2>{{ project.name }}</h2></a>  -->
+        <!-- project desc. -->
+        <!-- <p>{{ project.description }}</p> -->
+        <!-- edit button -->
+        <!-- <i class="fas fa-edit"></i> -->
+        <!-- semi transparent bg img overlay -->
+        <!-- <div class="color"></div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+
+  <!-- </div> end project content -->
