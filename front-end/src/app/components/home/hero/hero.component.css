@@ -8,10 +8,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .hero-logo{
     height: 50%;
     width: auto;
+}
+.login-container{
+    /* border: 1px dashed red; */
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px 15px 0px 0px;
 }
 .line{
     width: 100%;
