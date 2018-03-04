@@ -1,4 +1,3 @@
-
 .login-wrap{
     width: 100%;
     color: #fff;
@@ -29,7 +28,15 @@ button{
     background-color: #ffb808;
     border: none;
     color: #fff;
+    cursor: pointer;
+}
+input{
+    opacity: 0.5;
 }
 input:focus {
     outline: none;
+    opacity: 1;
+}
+input:active{
+    opacity: 1;
 }
