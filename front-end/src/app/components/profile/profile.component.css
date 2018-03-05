@@ -5,9 +5,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "nav nav . . . . . ."
+    "nav nav co co co co co co"
 }
 .side-nav{
     grid-area: nav;
     background-color: #424242;
 } 
+.content{
+    grid-area: co;
+}
