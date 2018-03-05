@@ -1,0 +1,52 @@
+.login-wrap{
+    width: 100%;
+    color: #fff;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "user user pass pass btn"
+    ". . forgot forgot ."
+}
+.username-section{
+    grid-area: user;
+    /* border: 1px dashed lime; */
+}
+.pass-section{
+    grid-area: pass;
+    /* border: 1px dashed yellow; */
+}
+.btn-section{
+    grid-area: btn;
+    /* border: 1px dashed blue; */
+}
+.forgot-section{
+    grid-area: forgot;
+    /* border: 1px dashed red; */
+    text-align: center;
+}
+.forgot-section p{
+    margin: 0;
+}
+button{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    background-color: #ffb808;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+}
+input{
+    opacity: 0.8;
+}
+input:focus {
+    outline: none;
+    opacity: 1;
+}
+input:active{
+    opacity: 1;
+}

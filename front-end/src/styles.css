@@ -57,3 +57,41 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
 }
+.name-text{
+    font-weight: 800;
+    font-size: 70pt;
+}
+.title-text{
+    font-weight: 300;
+    font-size: 30pt;
+}
+.section-header-text{
+    font-weight: 600;
+    font-size: 40pt;
+}
+.subhead-1-text{
+    font-weight: 700;
+    font-size: 20pt;
+}
+.subhead-2-text{
+    font-weight: 300;
+    font-size: 14pt;
+}
+.date-text{
+    font-weight: 300;
+    font-size: 14pt;
+    font-style: italic;
+}
+.body-text{
+    font-size: 12pt;
+}
+.nav-text{
+    color: #fff;
+    list-style-type: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24pt;
+}
+.nav-text li{
+    margin: 20px 0px;
+}
