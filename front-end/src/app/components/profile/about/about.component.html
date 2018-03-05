@@ -1,8 +1,10 @@
+
 <div class="mainDiv">
-  <h1>Dude Person</h1>
+  <h1>Dude <strong style="color:rgba(255,184,8,0.85)">Person </strong></h1>
   <h2>Developer </h2>
   <label>Fresno, CA 00000 [555]555-5555 dudeperson@dude.com superdudews.com</label>
-  <p>ipsum dolor sit amet consectetur, adipisicing elit. Sit, corrupti. Nam dolorem voluptatibus dolor reprehenderit adipisci excepturi illo libero perferendis veritatis ut, at, optio harum, ipsam ab repellat minima voluptatem!
+  <p>ipsum dolor sit amet consectetur, adipisicing elit. Sit, corrupti. Nam dolorem voluptatibus dolor reprehenderit adipisci
+    excepturi illo libero perferendis veritatis ut, at, optio harum, ipsam ab repellat minima voluptatem!
   </p>
   <div class="social-icons">
     <div class="social-circle">
@@ -12,20 +14,16 @@
       <i class="fab fa-facebook"></i>
     </div>
     <div class="social-circle">
-        <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-linkedin-in"></i>
     </div>
   </div>
-  <div class=form>
-    <p><b>About:</b> </p>
+  <form class="form" hidden>
+  <div class="inputs"  >
     <p>
-      <input type="text" ng-model="firstName" placeholder="First Name">
-      <input type="text" ng-model="lastName" placeholder="Last Name">
-      <br>
-      <br>
-      <input type="text" ng-model="title" placeholder="Title">
-      <br>
-      <br>
-      <input type="text" ng-model="city" placeholder="City">
+      <input class="form-input first-name" type="text" placeholder="First Name">
+      <input class="form-input last-name" type="text"  placeholder="Last Name">
+      <input class="form-input title"  type="text"  placeholder="Title">
+      <input class="form-input city"  placeholder="City">
       <select name="state" id="state" ng-model="data.state">
         <option>--State--</option>
         <option>PA</option>
@@ -53,4 +51,5 @@
     <br>
     <input type="text" ng-model="faceBook" placeholder="Facebook">
   </div>
+</form>
 </div>
