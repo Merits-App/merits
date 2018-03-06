@@ -13,4 +13,9 @@
 } 
 .content{
     grid-area: co;
+    border: 1px dashed red;
+}
+.skills-container{
+    border: 1px dashed blue;
+    margin: 30px;
 }

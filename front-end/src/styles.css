@@ -68,6 +68,7 @@ body{
 .section-header-text{
     font-weight: 600;
     font-size: 40pt;
+    border-bottom: 4px solid #ffb808;
 }
 .subhead-1-text{
     font-weight: 700;
