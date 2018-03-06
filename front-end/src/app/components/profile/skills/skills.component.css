@@ -1,7 +1,26 @@
+.visitor-view{
+    border: 1px dashed red;
+}
 .header{
     width: 100%;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 }
 .programming-section{
     border: 1px dashed green;
+}
+.other-section{
+    border: 1px dashed salmon;
+}
+.skills-container{
+    border: 1px dashed lime;
+    color: #fff;
+}
+.skill-bubble{
+    background-color: #424242;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 3px;
+}
+.skill-bubble p{
+    margin: 7px;
 }
