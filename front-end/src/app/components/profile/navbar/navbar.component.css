@@ -1,5 +1,5 @@
 .navStype {
-  padding: 100px;
+  padding: 75px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -12,12 +12,11 @@
   border-radius: 80%;
   align-self: center;
 }
-.navLinks{
--ms-flex-line-pack: center;
-color: rgba(255,184,8,0.85);
-
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: rgba(255, 184, 8, 0.85);
 }
-a{
+a {
   color: white;
   text-decoration: none;
 }

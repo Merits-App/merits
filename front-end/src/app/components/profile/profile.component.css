@@ -1,17 +1,20 @@
-.profile-grid-container{
-    width: 100vw;
-    height: 100vh;
-    /* border: 1px dashed red; */
-    display: grid;
-    grid-template-columns: 1fr 1fr .5fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "nav nav . comp comp comp comp comp"
+.profile-grid-container {
+  width: 100vw;
+  height: 100vh;
+  /* border: 1px dashed red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "nav nav co co co co co co";
 }
-.side-nav{
-    grid-area: nav;
-    background-color: #424242;
+.side-nav {
+  position: fixed;
+  grid-area: nav;
+  background-color: #424242;
+  width: 25%;
 }
-.components-area{
-  grid-area: comp;
+.content {
+  grid-area: co;
 }
-
+h1 {
+  height: 25vh;
+}

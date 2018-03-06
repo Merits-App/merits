@@ -1,6 +1,7 @@
 .mainDiv{
 display: flex;
 flex-direction: column;
+margin:25px;
 }
 .social-icons{
     /* border: 1px dashed lime; */
@@ -51,4 +52,7 @@ flex-direction: column;
 }
 .state{
     grid-area: state
+}
+strong{
+    color:rgba(255,184,8,0.85);
 }
