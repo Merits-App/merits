@@ -6,13 +6,13 @@
     /* border: 1px dashed red; */
 }
 .programming-section{
-    border: 1px dashed green;
+    /* border: 1px dashed green; */
 }
 .other-section{
-    border: 1px dashed salmon;
+    /* border: 1px dashed salmon; */
 }
 .skills-container{
-    border: 1px dashed lime;
+    /* border: 1px dashed lime; */
     color: #fff;
 }
 .skill-bubble{
@@ -23,4 +23,7 @@
 }
 .skill-bubble p{
     margin: 7px;
+}
+h2{
+    margin: 3px 0px;;
 }
