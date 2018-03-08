@@ -1,0 +1,22 @@
+.navStype {
+  padding: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #424242;
+  color: #fff;
+  text-align: center;
+}
+.img-round {
+  width: 200px;
+  border-radius: 80%;
+  align-self: center;
+}
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: rgba(255, 184, 8, 0.85);
+}
+a {
+  color: white;
+  text-decoration: none;
+}

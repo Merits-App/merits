@@ -1,3 +1,84 @@
-<p>
-  projects works!
-</p>
+<div class="projects-comp">
+  <div class="comp-header">
+    <h1>Projects</h1>
+    <!-- Will need to add an *ngIf here to detect if content is present -->
+    <i class="fas fa-eye"></i>
+    <!-- <i class="fas fa-eye hidden"></i> -->
+  </div>
+  <div class="proj-content">
+
+    <div class="project" (mouseenter)="toggle()">
+      <img src="../../../../assets/img/placeholder-2.jpg" alt="project des">
+      <div class="overlay" *ngIf="show">
+        <div class="color"></div>
+        <h2>Project One</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
+        <i class="fas fa-edit"></i>
+      </div>
+     </div>
+
+     <div class="project" (mouseenter)="toggle()">
+      <img src="../../../../assets/img/placeholder-3.jpg" alt="project des">
+      <div class="overlay" *ngIf="show">
+        <div class="color"></div>
+        <h2>Project Two</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
+        <i class="fas fa-edit"></i>
+      </div>
+     </div>
+
+     <div class="project" (mouseenter)="toggle()">
+      <img src="../../../../assets/img/placeholder-4.jpg" alt="project des">
+      <div class="overlay" *ngIf="show">
+        <div class="color"></div>
+        <h2>Project Three</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
+        <i class="fas fa-edit"></i>
+      </div>
+     </div>
+
+     <div class="project" (mouseenter)="toggle()">
+      <img src="../../../../assets/img/placeholder-5.jpg" alt="project des">
+      <div class="overlay" *ngIf="show">
+        <div class="color"></div>
+        <h2>Project Four</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
+        <i class="fas fa-edit"></i>
+      </div>
+     </div>
+
+     <div class="project" (mouseenter)="toggle()">
+        <img src="../../../../assets/img/placeholder-3.jpg" alt="project des">
+        <div class="overlay" *ngIf="show">
+          <div class="color"></div>
+          <h2>Project Five</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo architecto commodi harum deserunt quisquam cupiditate, animi eum quasi dolore ipsam.</p>
+          <i class="fas fa-edit"></i>
+        </div>
+       </div>
+
+  </div>
+</div>
+
+
+
+  <!-- loop through projects and populate component from DB -->
+  <!-- <div *ngFor="let project of projects" class="proj-content"> -->
+
+    <!-- <div class="project" (mouseenter)="toggle()"> -->
+      <!-- base64 string of saved img in DB -->
+      <!-- <img src="{{ project.img }}" alt="{{ project.title }}"> -->
+      <!-- project info for overlay -->
+      <!-- <div class="overlay" *ngIf="show"> -->
+        <!-- white bg overlay when hovered -->
+        <!-- <div class="color"></div> -->
+        <!-- project link and title  -->
+        <!-- <a href="{{ project.url }}"><h2>{{ project.title }}</h2></a>  -->
+        <!-- project desc. -->
+        <!-- <p>{{ project.description }}</p> -->
+        <!-- edit button -->
+        <!-- <i class="fas fa-edit" (click)="displayModal()"></i> -->
+      <!-- </div> -->
+    <!-- </div> -->
+
+  <!-- </div> end project content -->

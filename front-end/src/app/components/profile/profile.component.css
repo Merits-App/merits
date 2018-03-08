@@ -30,3 +30,23 @@
     z-index: 1;
     display: none;
 }
+.profile-grid-container {
+  width: 100vw;
+  height: 100vh;
+  /* border: 1px dashed red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "nav nav co co co co co co";
+}
+.side-nav {
+  position: fixed;
+  grid-area: nav;
+  background-color: #424242;
+  width: 25%;
+}
+.content {
+  grid-area: co;
+}
+h1 {
+  height: 25vh;
+}

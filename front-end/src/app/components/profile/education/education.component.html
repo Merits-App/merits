@@ -1,41 +1,54 @@
-<div ng-app="">
-
-          <p>Education: </p>
-          <p>
-            <input type="text" ng-model="institute-name" placeholder="Name of Institution">
-          </p>
-          <p>
-            <input type="text" ng-model="fieldOfStudy" placeholder="Field of Study">
-            <select name="degreeSelect" id="degreeSelect" ng-model="data.degreeSelect">
-              <option>----Degree---</option>
-              <option>Masters</option>
-              <option>Under Graduate</option>
-              <option>High School</option>
-            </select>
-            <br>
-            <p>
-              <label>Date of completion</label>
-              <br>
-              <select name="monthEnd" id="monthEnd" ng-model="data.monthEnd">
-                <option>MM</option>
-                <option>Jan</option>
-                <option>Feb</option>
-                <option>March</option>
-              </select>
-              <select name="yrEnd" id="yrEnd" ng-model="data.yrEnd">
-                <option>YYYY</option>
-                <option>2000</option>
-                <option>2001</option>
-                <option>2002</option>
-              </select>
-            </p>
-            <label>Current :
-              <input type="checkbox" ng-model="current">
-            </label>
-            <br/>
-            <p>
-              <textarea type="text" ng-model="addiInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
-            </p>
-
-
-        </div>
+<div class="section-header-text">Education</div>
+<div class="eduSection">
+  <label class="date-text education-date">Jan 2016 - Dec 2017</label>
+  <div class="econtent">
+    <h3 class="subhead-1-text">California University - Fresno</h3>
+    <h4 class="subhead-2-text">Computer Science</h4>
+    <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam, ipsum sint iusto vero temporibus unde harum at
+      odio in fuga, eaque commodi voluptate obcaecati dignissimos quae illo officia autem!</p>
+  </div>
+</div>
+<div class="eduSection">
+  <label class="date-text education-date">Jan 2014 - Dec 2015</label>
+  <div class="econtent">
+    <h3 class="subhead-1-text">Fresno University - Fresno</h3>
+    <h4 class="subhead-2-text">Diploma</h4>
+    <p class="body-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam, ipsum sint iusto vero temporibus unde harum at
+      odio in fuga, eaque commodi voluptate obcaecati dignissimos quae illo officia autem!</p>
+  </div>
+</div>
+<div ng-app="" hidden>
+  <p><input type="text" ng-model="institute-name" placeholder="Name of Institution"></p>
+  <p>
+    <input type="text" ng-model="fieldOfStudy" placeholder="Field of Study">
+    <select name="degreeSelect" id="degreeSelect" ng-model="data.degreeSelect">
+      <option>----Degree---</option>
+      <option>Masters</option>
+      <option>Under Graduate</option>
+      <option>High School</option>
+    </select>
+    <br>
+    <p>
+      <label>Date of completion</label>
+      <br>
+      <select name="monthEnd" id="monthEnd" ng-model="data.monthEnd">
+        <option>MM</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>March</option>
+      </select>
+      <select name="yrEnd" id="yrEnd" ng-model="data.yrEnd">
+        <option>YYYY</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+      </select>
+    </p>
+    <label>Current :
+      <input type="checkbox" ng-model="current">
+    </label>
+    <br/>
+    <p>
+      <textarea type="text" ng-model="addiInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+    </p>
+</div>

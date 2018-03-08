@@ -1,0 +1,100 @@
+.projects-comp {
+  width: 100%;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 40pt;
+  margin: 0;
+}
+
+.comp-header {
+  border-bottom: 4px solid #ffb808;
+  margin-bottom: 10px;
+  position: relative;
+  margin: 5px;
+}
+
+.proj-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 4px -1px #424242;
+}
+
+h2, p {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  margin: 0;
+}
+
+h2 {
+  top: 10px;
+}
+
+h2:hover {
+  cursor: pointer;
+}
+
+p {
+  /* width: 90%; */
+  /* margin: 0 auto; */
+  top: 40px;
+  pointer-events: none;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .4s;
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.color {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(220, 220, 220, .8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+svg {
+  color: #424242;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  transform: scale(1.8);
+  transform-origin: bottom right;
+  transition: all .3s;
+}
+
+.overlay svg:hover {
+  cursor: pointer;
+  transform: scale(2);
+}

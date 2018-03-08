@@ -1,0 +1,58 @@
+.mainDiv{
+display: flex;
+flex-direction: column;
+margin:25px;
+}
+.social-icons{
+    /* border: 1px dashed lime; */
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+.social-circle{
+    height: 35px;
+    width: 35px;
+    background-color: rgb(88, 86, 86);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    margin: 0px 20px;
+}
+.inputs{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-areas: 
+    "fname fname fname lname lname ."
+    ". title title title title ."
+    ". create create create create ."
+    ". confirm confirm confirm confirm ."
+    ". city city city state ."
+}
+.first-name{
+    grid-area: fname;
+}
+.last-name{
+    grid-area: lname;
+}
+.tile{
+    grid-area: title;
+}
+.create{
+    grid-area: create;
+}
+.confirm{
+    grid-area: confirm;
+}
+.city{
+    grid-area: city;
+}
+.state{
+    grid-area: state
+}
+strong{
+    color:rgba(255,184,8,0.85);
+}
