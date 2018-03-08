@@ -1,0 +1,60 @@
+.title-section{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+}
+.inputs{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-areas: 
+    ". fname fname lname lname ."
+    ". mail mail mail mail ."
+    ". create create create create ."
+    ". confirm confirm confirm confirm ."
+    ". city city city state ."
+}
+.first-name{
+    grid-area: fname;
+}
+.last-name{
+    grid-area: lname;
+}
+.e-mail{
+    grid-area: mail;
+}
+.create{
+    grid-area: create;
+}
+.confirm{
+    grid-area: confirm;
+}
+.city{
+    grid-area: city;
+}
+.state{
+    grid-area: state
+}
+.button-section{
+    text-align: center;
+    padding: 20px 0px 50px 0px;
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    color: #757575;
+    cursor: pointer;
+}
+.form{
+    margin-bottom: 100px;
+
+}
+input:focus {
+    outline: none;
+}

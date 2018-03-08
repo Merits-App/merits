@@ -1,6 +1,15 @@
 version: "3.3"
 
 services:
+
+  mongodb:
+    # build: './mongo'
+    image: 'mongo:latest'
+    ports: 
+    - "27017:27017"
+    networks:
+    - appnet
+
   front-end:
     build: './front-end'
     ports: 
@@ -8,17 +17,24 @@ services:
       - '49153:49153'
     volumes:
       - './front-end:/usr/src/app'
+    depends_on: 
+      - mongodb
+    networks:
+      - appnet
 
   express-server:
-    build: '.'
+    build: './server'
     ports: 
       - '3000:8000'
     volumes:
-      - '.:/home/node/server'
-    
+      - './server:/home/node/server'
+    depends_on: 
+      - mongodb
+    networks:
+      - appnet
 
-
-
+networks:
+  appnet: 
 
 
 

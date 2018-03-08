@@ -1,0 +1,20 @@
+/* div {
+    margin:5px;
+} */
+.achSection{
+    display: grid;
+    grid-gap: 10px; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "aDate econtent econtent econtent"
+}
+p{
+    margin:10px;
+    margin-left: 0px;
+}
+.econtent{
+    grid-area:econtent;
+}
+.ach-date{
+    grid-area:aDate;
+}

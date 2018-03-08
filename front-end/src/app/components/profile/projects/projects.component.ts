@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+  // Properties
 
+  show = false;
+
+  // Methods
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  toggle() {
+    this.show = !this.show;
   }
 
 }

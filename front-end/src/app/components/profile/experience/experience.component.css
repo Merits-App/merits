@@ -1,0 +1,20 @@
+/* div {
+    margin:5px;
+} */
+.expSection{
+    display: grid;
+    grid-gap: 10px; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "eDate econtent econtent econtent"
+}
+p{
+    margin:10px;
+    margin-left: 0px;
+}
+.econtent{
+    grid-area:econtent;
+}
+.exp-date{
+    grid-area:eDate;
+}
