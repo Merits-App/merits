@@ -2,17 +2,9 @@
   width: 100%;
 }
 
-h1 {
-  font-weight: 600;
-  font-size: 40pt;
-  margin: 0;
-}
-
 .comp-header {
-  border-bottom: 4px solid #ffb808;
-  margin-bottom: 10px;
   position: relative;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .proj-content {
@@ -46,8 +38,6 @@ h2:hover {
 }
 
 p {
-  /* width: 90%; */
-  /* margin: 0 auto; */
   top: 40px;
   pointer-events: none;
 }

@@ -1,12 +1,17 @@
-.navStype {
-  padding: 75px;
+.navStyle {
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: #424242;
   color: #fff;
   text-align: center;
+  height: 100vh;
 }
+
+.img-container {
+  width: 100%;
+}
+
 .img-round {
   width: 200px;
   border-radius: 80%;
@@ -19,4 +24,7 @@ a:hover {
 a {
   color: white;
   text-decoration: none;
+}
+#icon{
+  fill: white;
 }
