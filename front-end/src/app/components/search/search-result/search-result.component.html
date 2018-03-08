@@ -1,18 +1,21 @@
-<div class="container-main">
-  <div class="container">
+ <div class="container-main">
+  <div class="container-box">
     <div class="row">
       <div class="search-wrap">
-        <app-search-bar></app-search-bar>
+        <button type="submit"><i class="fa fa-search" ></i></button>
+        <input class="search-bar form-input" type="text" placeholder="Search for User">
       </div>
-      <h1>Advanced Search</h1>
+    <div class="row">
+      <h1 class="form-input">Advanced Search</h1>
     </div>
   </div>
-  <div class="container">
+  <div class="container-box">
     <form class="form">
-      <div class="inputs">
-        <h2>Search by Location</h2>
-        <input class="form-input" type="text" placeholder="City">
-        <select class="state" name="State" id="state" placeholder="State">
+      <div class="inputs font-light">
+        <div class="city-state">
+          <h2 class="form-input-label">Search by Location</h2>
+          <input class="form-input input-1 input-2" type="text" placeholder="City">
+          <select class="state input-1" name="State" id="state" placeholder="State">
             <option selected="selected">State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -65,22 +68,23 @@
             <option value="WV">West Virginia</option>
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
-        </select>
-        <h2>Search by Title</h2>
+          </select>
+        </div>
+        <h2 class="form-input-label">Search by Title</h2>
         <input class="form-input" type="text" placeholder="Title">
-        <h2>Search by Company</h2>
+        <h2 class="form-input-label">Search by Company</h2>
         <input class="form-input" type="text" placeholder="Company Name">
-        <h2>Search by Skills</h2>
-        <input class="form-input" type="text" placeholder="Skill Name">
-        <h2>Search by Language</h2>
-        <input class="form-input" type="text" placeholder="Language">
+        <h2 class="form-input-label">Search by Skills</h2>
+        <input class="form-input" type="text" id="inside" placeholder="Skill Name">
+        <h2 class="form-input-label">Search by Language</h2>
+        <input class="form-input" type="text" id="inside" placeholder="Language">
         <div class="button-section">
-          <button>Search</button>
+          <button class="button-1">Search</button>
         </div>
       </div>
     </form>
   </div>
-  <div class="container">
+  <div class="container-box">
     <div class="row">
       <div class="col-sm-4">
         <!--Photo-->
