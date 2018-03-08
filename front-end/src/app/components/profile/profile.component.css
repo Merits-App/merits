@@ -12,6 +12,7 @@
     grid-area: nav;
     background-color: #424242;
     z-index: -1;
+    width: 25%;
 } 
 .content{
     grid-area: co;
@@ -31,12 +32,6 @@
     opacity: 0.9;
     z-index: 1;
     display: none;
-}
-.side-nav {
-  position: fixed;
-  grid-area: nav;
-  background-color: #424242;
-  width: 25%;
 }
 h1 {
   height: 25vh;
