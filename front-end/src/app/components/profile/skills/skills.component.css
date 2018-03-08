@@ -5,10 +5,11 @@
     width: 100%;
     /* border: 1px dashed red; */
 }
-/* .programming-section{
-    border: 1px dashed green;
+.programming-section{
+    /* border: 1px dashed green; */
+    margin-bottom: 20px;
 }
-.other-section{
+/* .other-section{
     border: 1px dashed salmon;
 } */
 .skills-container{
@@ -26,4 +27,8 @@
 }
 h2{
     margin: 3px 0px;;
+}
+.skill-icon{
+    font-size: 75px;
+    margin-right: 10px;
 }
