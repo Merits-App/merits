@@ -1,97 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
-.font-light{
-    font-weight: 300;
+.font-light {
+  font-weight: 300;
 }
-.font-reg{
-    font-weight: 400;
+.font-reg {
+  font-weight: 400;
 }
-.font-med{
-    font-weight: 500;
+.font-med {
+  font-weight: 500;
 }
-.font-semi-bold{
-    font-weight: 600;
+.font-semi-bold {
+  font-weight: 600;
 }
-.font-bold{
-    font-weight: 700;
+.font-bold {
+  font-weight: 700;
 }
-.font-ex-bold{
-    font-weight: 800;
+.font-ex-bold {
+  font-weight: 800;
 }
-.form{
-    margin: 0;
-    width: 100%;
-    background-color: rgba(255,184,8,0.85);
-    border-radius: 5px;
-    box-shadow: 5px 5px 12px rgba(0,0,0,0.35);
+.form {
+  margin: 0;
+  width: 100%;
+  background-color: rgba(255, 184, 8, 0.85);
+  border-radius: 5px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.35);
 }
-.form-input{
-    width: 100%;
-    font-size: 13pt;
-    font-weight: 300;
-    border-radius: 5px;
-    border: none;
-    height: 30px;
-    text-indent: 10px;
-    font-family: 'Montserrat', sans-serif;
+.form-input {
+  width: 100%;
+  font-size: 13pt;
+  font-weight: 300;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  text-indent: 10px;
+  font-family: "Montserrat", sans-serif;
 }
-.form-input-label{
-    font-size: 15pt;
-    font-weight: 300;
-    color: #fff;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 1px;
+.form-input-label {
+  font-size: 15pt;
+  font-weight: 300;
+  color: #fff;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 1px;
+}
+.textarea-styled {
+  width: 400px;
+  height: 100px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 ::-webkit-input-placeholder {
-    color: #C6C6C6;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-indent: 10px;
-  }
-  select{
-    font-size: 16px;
-    border: none;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #fff;
+  color: #c6c6c6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-indent: 10px;
 }
-.name-text{
-    font-weight: 800;
-    font-size: 70pt;
+select {
+  font-size: 16px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
 }
-.title-text{
-    font-weight: 300;
-    font-size: 30pt;
+.name-text {
+  font-weight: 800;
+  font-size: 70pt;
+  /* height: 50px; */
+  margin: 0px;
 }
-.section-header-text{
-    font-weight: 600;
-    font-size: 40pt;
+.title-text {
+  font-weight: 300;
+  font-size: 30pt;
+  margin: 0px;
 }
-.subhead-1-text{
-    font-weight: 700;
-    font-size: 20pt;
+.section-header-text {
+  font-weight: 600;
+  font-size: 40pt;
+  border-bottom: 4px solid #ffb808;
 }
-.subhead-2-text{
-    font-weight: 300;
-    font-size: 14pt;
+.subhead-1-text {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 20pt;
 }
-.date-text{
-    font-weight: 300;
-    font-size: 14pt;
-    font-style: italic;
+.subhead-2-text {
+  margin: 5px;
+  font-weight: 300;
+  font-size: 14pt;
 }
-.body-text{
-    font-size: 12pt;
+.date-text {
+  font-weight: 300;
+  font-size: 14pt;
+  font-style: italic;
 }
-.nav-text{
-    color: #fff;
-    list-style-type: none;
-    text-align: center;
-    font-weight: 500;
-    font-size: 24pt;
+.body-text {
+  font-size: 12pt;
 }
-.nav-text li{
-    margin: 20px 0px;
+.nav-text {
+  margin-top: 10px;
+  padding: 0;
+  color: #fff;
+  list-style-type: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18pt;
+}
+.nav-text li {
+  margin: 10px 0px;
 }
