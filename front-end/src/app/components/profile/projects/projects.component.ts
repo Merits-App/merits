@@ -19,7 +19,6 @@ export class ProjectsComponent implements OnInit {
 
   toggle() {
     this.show = !this.show;
-    console.log(this);
   }
 
 }

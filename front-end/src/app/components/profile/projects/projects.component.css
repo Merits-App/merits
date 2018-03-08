@@ -1,16 +1,18 @@
-.projects {
+.projects-comp {
   width: 100%;
 }
 
 h1 {
-  font-size: 3em;
+  font-weight: 600;
+  font-size: 40pt;
   margin: 0;
-  padding: 0;
 }
 
 .comp-header {
-  border-bottom: 3px solid #ffb808;
+  border-bottom: 4px solid #ffb808;
   margin-bottom: 10px;
+  position: relative;
+  margin: 5px;
 }
 
 .proj-content {
@@ -19,34 +21,35 @@ h1 {
   flex-wrap: wrap;
 }
 
-.placeholder {
+.project {
   position: relative;
-  width: 210px;
-  height: 210px;
+  width: 230px;
+  height: 230px;
   margin: 10px;
   text-align: center;
-  padding: 20px;
   box-shadow: 1px 1px 4px -1px #424242;
-}
-
-.placeholder:hover {
-  cursor: pointer;
 }
 
 h2, p {
   width: 100%;
-  margin: 0;
   position: absolute;
   left: 0;
-  pointer-events: none;
+  margin: 0;
 }
 
 h2 {
   top: 10px;
 }
 
+h2:hover {
+  cursor: pointer;
+}
+
 p {
+  /* width: 90%; */
+  /* margin: 0 auto; */
   top: 40px;
+  pointer-events: none;
 }
 
 img {
@@ -91,39 +94,7 @@ svg {
   transition: all .3s;
 }
 
-svg:hover {
+.overlay svg:hover {
   cursor: pointer;
   transform: scale(2);
 }
-
-/* .show {
-  animation-duration: .6s;
-  animation-name: fadeIn;
-  animation-fill-mode: forwards;
-  animation-direction: normal;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.hide {
-  animation-duration: .6s;
-  animation-name: fadeOut;
-  animation-fill-mode: forwards;
-  animation-direction: normal;
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
