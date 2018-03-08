@@ -14,8 +14,9 @@
 } 
 .content{
     grid-area: co;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     z-index: -1;
+    margin: 0px 10px;
 }
 .skills-container{
     border: 1px dashed black;
@@ -30,14 +31,14 @@
     z-index: 1;
     display: none;
 }
-.profile-grid-container {
+/* .profile-grid-container {
   width: 100vw;
   height: 100vh;
-  /* border: 1px dashed red; */
+  border: 1px dashed red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "nav nav co co co co co co";
-}
+} */
 .side-nav {
   position: fixed;
   grid-area: nav;

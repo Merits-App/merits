@@ -1,7 +1,7 @@
 .mainDiv{
 display: flex;
 flex-direction: column;
-margin:25px;
+/* margin:25px; */
 }
 .social-icons{
     /* border: 1px dashed lime; */

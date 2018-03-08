@@ -1,16 +1,16 @@
-.visitor-view{
+/* .visitor-view{
     border: 1px dashed red;
-}
+} */
 .header{
     width: 100%;
     /* border: 1px dashed red; */
 }
-.programming-section{
-    /* border: 1px dashed green; */
+/* .programming-section{
+    border: 1px dashed green;
 }
 .other-section{
-    /* border: 1px dashed salmon; */
-}
+    border: 1px dashed salmon;
+} */
 .skills-container{
     /* border: 1px dashed lime; */
     color: #fff;

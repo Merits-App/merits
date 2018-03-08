@@ -12,7 +12,7 @@ h1 {
   border-bottom: 4px solid #ffb808;
   margin-bottom: 10px;
   position: relative;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .proj-content {

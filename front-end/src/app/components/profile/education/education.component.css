@@ -1,6 +1,6 @@
-div {
+/* div {
   margin: 5px;
-}
+} */
 .eduSection {
   display: grid;
   grid-gap: 10px;
@@ -8,7 +8,7 @@ div {
   grid-template-areas: "eDate econtent econtent econtent";
 }
 p {
-  margin: 10px;
+  /* margin: 10px; */
   margin-left: 0px;
 }
 .econtent {
