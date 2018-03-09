@@ -1,0 +1,142 @@
+/* universals*/
+
+.container-box {
+    margin: 20px 80px 0px 80px;
+  
+    }
+
+h1 {
+    text-align: center;
+    font-size: 18pt;
+    color: #C6C6C6;
+}
+
+h2 {
+    padding: 15px;
+}
+
+.search-wrap{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas: "button bar";
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.35);
+    grid-gap: 20px;
+    margin: 40px 20px 20px 80px;
+    border-radius: 5px;
+   
+
+}
+.search-bar {
+    width: 100%;
+    grid-area: bar;
+ 
+}
+button {
+    grid-area: button;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #ffb808;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.button-section{
+    text-align: center;
+    padding: 20px;
+}
+
+.button-1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    color: #757575;
+    cursor: pointer; 
+    margin: 0 auto;
+}
+
+.button-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #ffd;
+    border: none;
+    color: #757575;
+    cursor: pointer; 
+    margin: 0 auto;
+}
+
+.form {
+    padding: 30px;
+}
+
+.city-state {
+    width: 50%;
+}
+ 
+.input-1 {
+    display: inline-block; 
+    border-radius: 5px;
+}
+
+.input-2 {
+    width: 50%;
+}
+
+#state {
+    color: black;
+    height: 32px;
+    text-indent: 5px;
+}
+.img-round {
+    width: 150px;
+    border-radius: 80%;
+    align-self: center;
+    margin: 15px;
+}
+#results {
+    text-indent: 60px;
+}
+
+.profile {
+    display: grid; 
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img info info info";
+}
+
+.profile-image {
+    grid-area: img;
+}
+
+.profile-info {
+    grid-area: info;
+}
+
+.form-input-label-heading {
+    font-size: 36pt;
+    font-weight: 700;
+    color: #fff;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 1px;
+    padding: 5px;
+}
+
+.profile-name {
+    font-size: 18pt;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}

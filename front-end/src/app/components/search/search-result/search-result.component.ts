@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchResultComponent implements OnInit {
 
+  show=false;
+
   constructor() { }
 
   ngOnInit() {
   }
+  mySearch () {
+    this.show = !this.show;
+    }
+     
+      
+  
+ 
 
-}
+  }
+
