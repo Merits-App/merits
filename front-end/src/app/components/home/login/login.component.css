@@ -1,36 +1,44 @@
-.login-wrap{
+.login-wrap {
     width: 100%;
     color: #fff;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "user user pass pass btn"
-    ". . forgot forgot ."
+    ". . . forgot forgot";
 }
-.username-section{
+
+.username-section {
     grid-area: user;
-    /* border: 1px dashed lime; */
 }
-.pass-section{
+
+.pass-section {
     grid-area: pass;
-    /* border: 1px dashed yellow; */
 }
-.btn-section{
+
+.btn-section {
     grid-area: btn;
-    /* border: 1px dashed blue; */
 }
-.forgot-section{
+
+.forgot-section {
     grid-area: forgot;
-    /* border: 1px dashed red; */
-    text-align: center;
+    text-align: right;
 }
-.forgot-section p{
+
+.forgot-section p {
     margin: 0;
+    transition: .4s all;
 }
-button{
+
+.forgot-section p:hover {
+    color: #ffb808;
+    cursor: pointer;
+}
+
+button {
     width: 100%;
-    height: 100%;
+    height: 32px;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 13pt;
@@ -40,13 +48,35 @@ button{
     cursor: pointer;
     opacity: 0.5;
 }
-input{
+
+input {
     opacity: 0.8;
 }
+
 input:focus {
     outline: none;
     opacity: 1;
 }
-input:active{
+
+input:active {
     opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
+
+    .login-wrap {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "user user user user"
+        "pass pass pass pass"
+        ". btn btn ."
+        ". forgot forgot .";
+    }
+
+    .forgot-section {
+        margin: -5px;
+        text-align: center;
+    }
+
 }
