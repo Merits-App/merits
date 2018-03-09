@@ -44,13 +44,3 @@ h2{
     transform: scale(2);
     transition: all .3s;
   }
-/* svg {
-    color: #424242;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    transform: scale(1.8);
-    transform-origin: bottom right;
-    transition: all .3s;
-  }
-  */
