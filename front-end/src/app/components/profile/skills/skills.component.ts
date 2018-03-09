@@ -11,5 +11,11 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+ showModal(){
+    var popup = document.querySelector('.popup-bg');
+    
+    popup.setAttribute("style", "display: block");
+    console.log('works');
+  }
 }
+
