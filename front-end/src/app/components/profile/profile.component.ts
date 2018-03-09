@@ -13,9 +13,15 @@ export class ProfileComponent implements OnInit {
     console.log('The profile page is connected to the routes.');
   }
   showModal(){
-    // var popup = document.querySelector('.popup-bg');
+    var popup = document.querySelector('.popup-bg');
     
-    // popup.setAttribute("style", "display: block");
+    popup.setAttribute("style", "display: block");
+    console.log('works');
+  }
+  hideModal(){
+    var popup = document.querySelector('.popup-bg');
+    
+    popup.setAttribute("style", "display: none");
     console.log('works');
   }
 }

@@ -17,5 +17,11 @@ export class SkillsComponent implements OnInit {
     popup.setAttribute("style", "display: block");
     console.log('works');
   }
+  hideModal(){
+    var popup = document.querySelector('.popup-bg');
+    
+    popup.setAttribute("style", "display: none");
+    console.log('works');
+  }
 }
 
