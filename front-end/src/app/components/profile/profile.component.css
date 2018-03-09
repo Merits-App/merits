@@ -28,8 +28,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #fff;
-    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 1;
     display: none;
 }
@@ -40,14 +39,25 @@ h1 {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 100px;
-    height: 100px;
+    transform:translate(-50%,-50%);
+    width: 900px;
+    /* height: 500px; */
 }
 .close-modal-btn{
     height: 25px;
     width: 25px;
+    cursor: pointer;
+    margin: 10px;
 }
 .close-btn{
+    color: #fff;
     width: 100%;
     height: 100%;
+}
+.inputs{
+    /* width: 100%; */
+    margin: 15px;
+}
+.form-input{
+    padding: 0px;
 }
