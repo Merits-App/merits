@@ -12,12 +12,6 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     console.log('The profile page is connected to the routes.');
   }
-  showModal(){
-    var popup = document.querySelector('.popup-bg');
-    
-    popup.setAttribute("style", "display: block");
-    console.log('works');
-  }
   hideModal(){
     var popup = document.querySelector('.popup-bg');
     

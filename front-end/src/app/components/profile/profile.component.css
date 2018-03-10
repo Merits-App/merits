@@ -29,6 +29,7 @@
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 1;
     display: none;
+    /* opacity: 0; */
 }
 h1 {
   height: 25vh;
@@ -54,15 +55,23 @@ h1 {
 }
 .inputs{
     /* width: 100%; */
-    margin: 15px;
+    margin: 15px 25px;
 }
 .form-input{
     padding: 0px;
 }
 .program-popup-section{
-    margin: 15px;
+    margin: 25px;
     /* font-size: 50px; */
-    margin-right: 10px;
+}
+.program-popup-section i{
+    font-size: 50px;
+}
+.icons-section{
+    margin: 10px 0px;
+}
+.skills-container{
+    margin: 10px 0px;
 }
 .skill-bubble{
     background-color: #fff;
@@ -70,12 +79,22 @@ h1 {
     display: inline-block;
     margin: 3px;
 }
-.skill-bubble i{
-    display: inline-block;
-    margin-left: 3px;
-}
 .skill-bubble p{
     margin: 7px;
     font-size: 12pt;
     display: inline-block;
+}
+.close{
+    display: inline;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.icon{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.close-icon{
+    cursor: pointer;
+    color: #fff;
 }
