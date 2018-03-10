@@ -5,13 +5,13 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "nav nav co co co co co co";
-    transition: all .6s;
 }
 .side-nav{
     position: fixed;
     grid-area: nav;
     background-color: #424242;
     width: 25%;
+    z-index: 9998;
 }
 .content{
     grid-area: co;
@@ -41,22 +41,26 @@ h1 {
     height: 100px;
 }
 
-svg.nav-icon {
+i.nav-icon {
     font-size: 2em;
     position: absolute;
     top: 10px;
-    left: calc(100% + 10px);
-    z-index: 100;
-    fill: black;
+    left: 10px;
+    z-index: 9999;
+    cursor: pointer;
+    color: #424242;
+}
+
+i.nav-icon.fa-arrow-left {
+    color: #ffb808;
 }
 
 /* Media Queries */
 
 @media (min-width: 1001px) {
 
-    .side-nav{
-        left: 0;
-        transition: all .4s;
+    i.nav-icon {
+        display: none;
     }
 
 }
@@ -68,8 +72,8 @@ svg.nav-icon {
         "co co co co co co co co";
     }
 
-    .side-nav {
-        left: -100%;
+    i.nav-icon {
+        display: block;
     }
 
 }

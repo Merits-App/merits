@@ -3,10 +3,11 @@
 
   </div>
 </div>
+
 <div class="profile-grid-container">
-  <div class="side-nav">
-    <i class="fas fa-bars nav-icon"></i>
-    <!-- <i class="fas fa-arrow-left nav-icon"></i> -->
+  <i class="fas fa-bars nav-icon" (click)="showNav()" *ngIf="!menu"></i>
+  <i class="fas fa-arrow-left nav-icon" (click)="hideNav()" *ngIf="menu"></i>
+  <div class="side-nav" *ngIf="menu">
     <app-navbar></app-navbar>
   </div>
   <div class="content">

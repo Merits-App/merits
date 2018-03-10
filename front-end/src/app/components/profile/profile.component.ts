@@ -6,11 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  // Properties
 
+  menu = true;
+
+  // Methods
   constructor() { }
 
   ngOnInit() {
-    console.log('The profile page is connected to the routes.');
+
+    // checkWindow();
+
   }
 
+  showNav() {
+    this.menu = true;
+  }
+
+  hideNav() {
+    this.menu = false;
+  }
+
+  // checkWindow() {
+  //   Window.innerWidth >= 1000px ? console.log(1) : console.log(2);
+  // };
 }
