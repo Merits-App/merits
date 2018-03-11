@@ -15,6 +15,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     console.log('The profile page is connected to the routes.');
     this.newSkill = { languages: '', otherSkills: ''};
+    console.log(this.newSkill);
   }
   
   onSubmit(){
@@ -22,9 +23,9 @@ export class ProfileComponent implements OnInit {
   }
 
   hideModal(){
-    var popup = document.querySelector('.popup-bg');
+    var skillsPopup = document.querySelector('#skills-popup');
     
-    popup.setAttribute("style", "display: none");
+    skillsPopup.setAttribute("style", "display:none");
     console.log('works');
   }
 }

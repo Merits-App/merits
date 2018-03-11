@@ -29,18 +29,19 @@
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 1;
     display: none;
-    /* opacity: 0; */
+}
+.popup-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". form form form form form ."
 }
 h1 {
   height: 25vh;
 }
 .popup-modal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    width: 900px;
-    /* height: 500px; */
+    grid-area: form;
+    width: 100%;
 }
 .close-modal-btn{
     height: 25px;

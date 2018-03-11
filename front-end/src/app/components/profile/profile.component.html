@@ -1,13 +1,14 @@
-<div class="popup-bg">
+<div id ="skills-popup" class="popup-bg">
+  <div class="popup-grid">
   <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
     <div class="close-modal-btn" (click)="hideModal()">
       <i class="fas fa-times close-btn"></i>
     </div>
     <div class="inputs">
       <label class="form-input-label" for="new skill">Add a New Skill</label>
-      <input class="form-input first-name"type="text" placeholder="Type to Add a New Skill" 
-      ngControl="skill"
-      [(ngModel)]="User.skills">
+      <input class="form-input first-name"type="text" placeholder="Type to Add a New Skill">
+      <!-- ngControl="otherSkills"
+      [(ngModel)]="User.skills" -->
     </div>
     <div class="program-popup-section">
       <h2 class="form-input-label">Programming Skills</h2>
@@ -108,6 +109,11 @@
         </div>
     </div>
   </form>
+  </div>
+</div>
+
+<div id="projects-popup" class="popup-bg">
+
 </div>
 
 <div class="profile-grid-container">
