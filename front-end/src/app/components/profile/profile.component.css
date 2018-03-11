@@ -10,7 +10,7 @@
 .side-nav{
     position: fixed;
     grid-area: nav;
-    background-color: #424242;
+    /* background-color: #424242; */
     width: 25%;
 } 
 .content{
@@ -97,4 +97,21 @@ h1 {
 .close-icon{
     cursor: pointer;
     color: #fff;
+}
+.btn-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.submit-btn{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    color: #757575;
+    cursor: pointer;
+    margin: 0 auto;
 }

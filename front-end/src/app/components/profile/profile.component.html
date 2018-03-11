@@ -1,10 +1,13 @@
 <div class="popup-bg">
-  <div class="popup-modal form">
+  <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
     <div class="close-modal-btn" (click)="hideModal()">
       <i class="fas fa-times close-btn"></i>
     </div>
     <div class="inputs">
-      <input class="form-input first-name"type="text" placeholder="Type to Add a New Skill">
+      <label class="form-input-label" for="new skill">Add a New Skill</label>
+      <input class="form-input first-name"type="text" placeholder="Type to Add a New Skill" 
+      ngControl="skill"
+      [(ngModel)]="User.skills">
     </div>
     <div class="program-popup-section">
       <h2 class="form-input-label">Programming Skills</h2>
@@ -100,8 +103,11 @@
             </div>
 
         </div>
+        <div class="btn-section">
+          <button class="submit-btn" type="submit">Save Changes</button>
+        </div>
     </div>
-  </div>
+  </form>
 </div>
 
 <div class="profile-grid-container">

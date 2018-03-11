@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../../models/User';
 
 @Component({
   selector: 'app-profile',
@@ -7,11 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  newSkill: User["skills"];
+
   constructor() { }
 
   ngOnInit() {
     console.log('The profile page is connected to the routes.');
+    this.newSkill = { languages: '', otherSkills: ''};
   }
+  
+  onSubmit(){
+
+  }
+
   hideModal(){
     var popup = document.querySelector('.popup-bg');
     
