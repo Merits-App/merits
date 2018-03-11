@@ -113,7 +113,13 @@
 </div>
 
 <div id="projects-popup" class="popup-bg">
-
+  <div class="popup-grid">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
+      <div class="close-modal-btn" (click)="hideProjectsModal()">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+    </form>
+  </div>
 </div>
 
 <div class="profile-grid-container">

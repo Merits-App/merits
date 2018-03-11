@@ -28,4 +28,11 @@ export class ProfileComponent implements OnInit {
     skillsPopup.setAttribute("style", "display:none");
     console.log('works');
   }
+  hideProjectsModal(){
+    var projectsPopup = document.querySelector('#projects-popup');
+    
+    projectsPopup.setAttribute("style", "display:none");
+    console.log('works');
+  }
+  
 }
