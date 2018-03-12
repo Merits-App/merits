@@ -19,3 +19,15 @@
 p{
     margin: 10px 10px 10px 0;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 650px){
+
+    .achSection {
+        grid-template-areas:
+        "aDate aDate aDate ."
+        "econtent econtent econtent econtent";
+    }
+
+  }
