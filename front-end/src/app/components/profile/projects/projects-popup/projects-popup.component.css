@@ -1,30 +1,35 @@
-.close-modal-btn{
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    margin: 10px;
-}
 .close-btn{
     color: #fff;
     width: 100%;
     height: 100%;
 }
 .proj-inputs{
-    width: 100%;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
+    margin: 0px 25px 30px 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .add-img{
-    width: 200px;
+    width: 200px; 
     height: 200px;
     background-color: #fff;
+    color: #757575;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.add-img p{
+    font-size: 18pt;
+    margin: 10px;
 }
 .input-fields{
     width: 100%;
     /* border: 1px dashed blue; */
-    margin: 10px 20px;
+    margin: 0px;
 }
 .form-textarea{
     width: 100%;
@@ -33,6 +38,8 @@
     border-radius: 5px;
     border: none;
     padding: 0px;
+    margin: 0px;
+    resize: none;
 }
 .form-input{
     margin: 10px 0px;
@@ -46,5 +53,5 @@
     border: none;
     color: #757575;
     cursor: pointer;
-    margin: 0 auto;
+    margin-top: 20px;
 }
