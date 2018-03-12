@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RoutingModule } from './app.routes';
+import { FormsModule }   from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -20,6 +21,8 @@ import { LoginComponent } from './components/home/login/login.component';
 import { RegisterComponent } from './components/home/register/register.component';
 import { HeroComponent } from './components/home/hero/hero.component';
 import { FooterComponent } from './components/home/footer/footer.component';
+import { ProjectsPopupComponent } from './components/profile/projects/projects-popup/projects-popup.component';
+import { SkillsPopupComponent } from './components/profile/skills/skills-popup/skills-popup.component';
 
 
 @NgModule({
@@ -40,11 +43,14 @@ import { FooterComponent } from './components/home/footer/footer.component';
     LoginComponent,
     RegisterComponent,
     HeroComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectsPopupComponent,
+    SkillsPopupComponent
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@
 } */
 .header{
     width: 100%;
+    position: relative;
     /* border: 1px dashed red; */
 }
 .programming-section{
@@ -32,3 +33,14 @@ h2{
     font-size: 75px;
     margin-right: 10px;
 }
+.edit-icon{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    transform: scale(1.8);
+}
+.edit-icon:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all .3s;
+  }
