@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon -L"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,17 @@
   },
   "homepage": "https://github.com/benreckas/merits#readme",
   "dependencies": {
-    "express": "~4.16.2",
+    "bcryptjs": "^2.4.3",
     "body-parser": "~1.18.2",
-    "cookie-parser": "~1.4.3"
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "express": "~4.16.2",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1"
   },
   "devDependencies": {
-    "nodemon": "*"
+    "nodemon": "^1.17.1"
   }
 }

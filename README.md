@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="50%" src="images/merits-logo.png" alt="Merits Logo">
+  <img width="50%" src="front-end/src/assets/img/hero-logo.png" alt="Merits Logo">
 </div>
 
 <h6 align="center"><em>Merits</em> is a place for programmers and developers to create a resume that will put their work, experience and skills on display. <em>Merits</em> will also allow users to browse and search through existing users and projects.</h6>

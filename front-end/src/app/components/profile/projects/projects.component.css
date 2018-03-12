@@ -1,12 +1,14 @@
+/* Project Container */
 .projects-comp {
   width: 100%;
 }
 
+/* Header */
 .comp-header {
   position: relative;
-  /* margin: 5px; */
 }
 
+/* Main Content */
 .proj-content {
   display: flex;
   justify-content: center;
@@ -51,6 +53,7 @@ img {
   pointer-events: none;
 }
 
+/* Hover Overlay */
 .overlay {
   position: absolute;
   top: 0;
@@ -74,7 +77,8 @@ img {
   left: 0;
 }
 
-svg {
+/* FontAwesome Icons */
+i {
   color: #424242;
   position: absolute;
   right: 10px;
@@ -84,7 +88,7 @@ svg {
   transition: all .3s;
 }
 
-.overlay svg:hover {
+.overlay i:hover {
   cursor: pointer;
   transform: scale(2);
 }

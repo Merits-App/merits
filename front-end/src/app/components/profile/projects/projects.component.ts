@@ -17,8 +17,16 @@ export class ProjectsComponent implements OnInit {
 
   }
 
+  // Toggle Overlay
   toggle() {
     this.show = !this.show;
+  }
+
+  showModal(){
+    var skillsPopup = document.querySelector('#projects-popup');
+    
+    skillsPopup.setAttribute("style", "display:flex; align-items:center;");
+    console.log('works');
   }
 
 }

@@ -1,20 +1,43 @@
-/* div {
-    margin:5px;
-} */
+/* Achievement Container */
 .achSection{
     display: grid;
-    grid-gap: 10px; 
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "aDate econtent econtent econtent"
 }
+
+.econtent {
+    grid-area: econtent;
+}
+
+.ach-date {
+    grid-area: aDate;
+}
+
+/* Text */
 p{
-    margin:10px;
-    margin-left: 0px;
+    margin: 10px 10px 10px 0;
 }
-.econtent{
-    grid-area:econtent;
-}
-.ach-date{
-    grid-area:aDate;
-}
+
+/* Media Queries */
+
+@media screen and (max-width: 650px){
+
+    .achSection {
+        grid-template-areas:
+        "aDate aDate aDate ."
+        "econtent econtent econtent econtent";
+    }
+
+    /* Redeclare Grid Areas for Compiling */
+
+    .econtent {
+        grid-area: econtent;
+    }
+
+    .ach-date {
+        grid-area: aDate;
+    }
+
+  }

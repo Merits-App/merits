@@ -1,34 +1,51 @@
-/* .visitor-view{
-    border: 1px dashed red;
-} */
-.header{
+/* Headers */
+.header {
     width: 100%;
-    /* border: 1px dashed red; */
+    position: relative;
 }
-.programming-section{
-    /* border: 1px dashed green; */
-    margin-bottom: 20px;
+
+h2 {
+    margin: 3px 0px;
 }
-/* .other-section{
-    border: 1px dashed salmon;
-} */
-.skills-container{
-    /* border: 1px dashed lime; */
+
+/* Programming Skills */
+
+.skills-icons {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.skill-icon {
+    font-size: 75px;
+    margin: 15px;
+}
+
+.edit-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    transform: scale(1.8);
+}
+
+.edit-icon:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all .3s;
+}
+
+/* Other Skills */
+.skills-container {
     color: #fff;
 }
-.skill-bubble{
+
+.skill-bubble {
     background-color: #424242;
     border-radius: 10px;
     display: inline-block;
     margin: 3px;
 }
-.skill-bubble p{
+
+.skill-bubble p {
     margin: 7px;
-}
-h2{
-    margin: 3px 0px;;
-}
-.skill-icon{
-    font-size: 75px;
-    margin-right: 10px;
 }

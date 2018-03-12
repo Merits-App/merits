@@ -1,18 +1,41 @@
-<div class="popup-bg">
-  <div class="popup-modal form">
+<!-- Profile Page -->
 
+<!-- Mobile nav event listener for window width -->
+<div (window:resize)="toggleNav($event)">
+
+  <!-- Modal Start -->
+  <div id ="skills-popup" class="popup-bg">
+    <skills-popup></skills-popup>
   </div>
-</div>
-<div class="profile-grid-container">
-  <div class="side-nav">
-    <app-navbar></app-navbar>
+
+  <div id="projects-popup" class="popup-bg">
+    <projects-popup></projects-popup>
   </div>
-  <div class="content">
-    <app-about></app-about>
-    <app-education></app-education>
-    <app-experience></app-experience>
-    <app-projects></app-projects>
-    <app-skills></app-skills>
-    <app-achievements></app-achievements>
-  </div>
+  <!-- Modal End -->
+
+  <div class="profile-grid-container"><!-- Profile Page Start -->
+
+    <i class="fas fa-bars nav-icon" (click)="showNav()" *ngIf="!menu"></i><!-- Hamburger Icon -->
+    <i class="fas fa-arrow-left nav-icon" (click)="hideNav()" *ngIf="menu"></i><!-- Arrow Icon -->
+
+    <!-- Nav Comp. -->
+    <div class="side-nav" *ngIf="menu">
+      <app-navbar></app-navbar>
+    </div>
+
+    <!-- Profile Content -->
+    <div class="content">
+      <div class="img-container">
+        <img class="img-round" src="../../../../assets/img/ProfilePic.JPG" alt="">
+      </div>
+      <app-about></app-about>
+      <app-education></app-education>
+      <app-experience></app-experience>
+      <app-projects></app-projects>
+      <app-skills></app-skills>
+      <app-achievements></app-achievements>
+    </div>
+
+  </div><!-- Profile Page End -->
+
 </div>

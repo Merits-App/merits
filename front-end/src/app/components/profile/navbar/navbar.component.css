@@ -1,3 +1,4 @@
+/* Nav Container */
 .navStyle {
   display: flex;
   justify-content: center;
@@ -8,23 +9,26 @@
   height: 100vh;
 }
 
+/* Image */
 .img-container {
   width: 100%;
+  pointer-events: none;
 }
 
 .img-round {
   width: 200px;
   border-radius: 80%;
   align-self: center;
+  pointer-events: none;
 }
+
+/* Nav List */
 a:hover {
   text-decoration-line: underline;
   text-decoration-color: rgba(255, 184, 8, 0.85);
 }
+
 a {
   color: white;
   text-decoration: none;
-}
-#icon{
-  fill: white;
 }

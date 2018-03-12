@@ -1,47 +1,60 @@
-.title-section{
+/* Header */
+.title-section {
     color: #fff;
     text-align: center;
     width: 100%;
     padding: 20px 0px;
 }
-.inputs{
+
+/* Form Container */
+.inputs {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
-    grid-template-areas: 
+    grid-template-areas:
     ". fname fname lname lname ."
     ". mail mail mail mail ."
     ". create create create create ."
     ". confirm confirm confirm confirm ."
-    ". city city city state ."
+    ". city city city state .";
 }
-.first-name{
+
+/* Grid Names Start */
+.first-name {
     grid-area: fname;
 }
-.last-name{
+
+.last-name {
     grid-area: lname;
 }
-.e-mail{
+
+.e-mail {
     grid-area: mail;
 }
-.create{
+
+.create {
     grid-area: create;
 }
-.confirm{
+
+.confirm {
     grid-area: confirm;
 }
-.city{
+
+.city {
     grid-area: city;
 }
-.state{
+
+.state {
     grid-area: state
 }
-.button-section{
+
+/* Buttons and Inputs */
+.button-section {
     text-align: center;
     padding: 20px 0px 50px 0px;
 }
-button{
+
+button {
     font-family: 'Montserrat', sans-serif;
     font-size: 13pt;
     padding: 5px 15px;
@@ -51,10 +64,70 @@ button{
     color: #757575;
     cursor: pointer;
 }
-.form{
-    margin-bottom: 100px;
 
+select {
+    height: 32px;
 }
+
+.form {
+    margin-bottom: 100px;
+}
+
 input:focus {
     outline: none;
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
+
+    .title-section h1 {
+        font-size: 1.6em;
+    }
+
+    .inputs {
+        grid-template-areas:
+        ". fname fname fname fname ."
+        ". lname lname lname lname ."
+        ". mail mail mail mail ."
+        ". create create create create ."
+        ". confirm confirm confirm confirm ."
+        ". city city city city ."
+        ". . state state . ."
+    }
+
+
+    .form {
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    /* Redeclare Grid Areas for Compiling */
+    .first-name {
+        grid-area: fname;
+    }
+
+    .last-name {
+        grid-area: lname;
+    }
+
+    .e-mail {
+        grid-area: mail;
+    }
+
+    .create {
+        grid-area: create;
+    }
+
+    .confirm {
+        grid-area: confirm;
+    }
+
+    .city {
+        grid-area: city;
+    }
+
+    .state {
+        grid-area: state
+    }
+
 }
