@@ -35,5 +35,10 @@ export class ProfileComponent implements OnInit {
   toggleNav($event) {
     $event.target.innerWidth >= 1000 ? this.menu = true : this.menu = false;
   }
-
+  hideModal(){
+    var popup = document.querySelector('.popup-bg');
+    
+    popup.setAttribute("style", "display: none");
+    console.log('works');
+  }
 }
