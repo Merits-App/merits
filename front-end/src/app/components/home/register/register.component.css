@@ -1,3 +1,4 @@
+/* Header */
 .title-section {
     color: #fff;
     text-align: center;
@@ -5,6 +6,7 @@
     padding: 20px 0px;
 }
 
+/* Form Container */
 .inputs {
     display: grid;
     grid-gap: 20px;
@@ -17,6 +19,7 @@
     ". city city city state .";
 }
 
+/* Grid Names Start */
 .first-name {
     grid-area: fname;
 }
@@ -45,6 +48,7 @@
     grid-area: state
 }
 
+/* Buttons and Inputs */
 .button-section {
     text-align: center;
     padding: 20px 0px 50px 0px;

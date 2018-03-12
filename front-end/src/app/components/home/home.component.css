@@ -1,3 +1,4 @@
+/* Home Page Container */
 .grid-container {
     width: 100vw;
     height: 100vh;
@@ -7,29 +8,32 @@
     "hero hero hero hero hero hero hero hero hero hero hero hero hero hero"
     ". . search search search search search search search search search search . ."
     ". . form form form form form form form form form form . ."
-    "footer footer footer footer footer footer footer footer footer footer footer footer footer footer"
+    "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
 }
 
+/* Hero */
 .hero-container {
     grid-area: hero;
 }
 
+/* Search */
 .search-container {
     grid-area: search;
     margin-bottom: 60px;
     border-radius: 5px;
 }
 
+/* Register Form */
 .register-form-container {
     grid-area: form;
 }
 
+/* Footer */
 .footer-container {
     grid-area: footer;
 }
 
 /* Media Queries */
-
 @media (max-width: 750px) {
 
     .grid-container{
@@ -37,7 +41,7 @@
         "hero hero hero hero hero hero hero hero hero hero hero hero hero hero"
         ". search search search search search search search search search search search search ."
         "form form form form form form form form form form form form form form"
-        "footer footer footer footer footer footer footer footer footer footer footer footer footer footer"
+        "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
     }
 
 }

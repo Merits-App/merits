@@ -11,11 +11,16 @@ export class ProfileComponent implements OnInit {
   menu = true;
 
   // Methods
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
 
-    // checkWindow();
+    // Check window size on page load
+    const screenWidth = window.innerWidth;
+    // If window is larger than 1000px then show desktop menu, else show mobile menu
+    screenWidth >= 1000 ? this.menu = true : this.menu = false;
 
   }
 
@@ -27,7 +32,8 @@ export class ProfileComponent implements OnInit {
     this.menu = false;
   }
 
-  // checkWindow() {
-  //   Window.innerWidth >= 1000px ? console.log(1) : console.log(2);
-  // };
+  toggleNav($event) {
+    $event.target.innerWidth >= 1000 ? this.menu = true : this.menu = false;
+  }
+
 }
