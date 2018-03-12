@@ -1,0 +1,50 @@
+.close-modal-btn{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin: 10px;
+}
+.close-btn{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.proj-inputs{
+    width: 100%;
+    border: 1px dashed red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-img{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+.input-fields{
+    width: 100%;
+    /* border: 1px dashed blue; */
+    margin: 10px 20px;
+}
+.form-textarea{
+    width: 100%;
+    font-size: 13pt;
+    font-weight: 300;
+    border-radius: 5px;
+    border: none;
+    padding: 0px;
+}
+.form-input{
+    margin: 10px 0px;
+}
+.submit-btn{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    color: #757575;
+    cursor: pointer;
+    margin: 0 auto;
+}

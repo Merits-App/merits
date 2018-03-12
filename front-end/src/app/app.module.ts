@@ -21,6 +21,7 @@ import { LoginComponent } from './components/home/login/login.component';
 import { RegisterComponent } from './components/home/register/register.component';
 import { HeroComponent } from './components/home/hero/hero.component';
 import { FooterComponent } from './components/home/footer/footer.component';
+import { ProjectsPopupComponent } from './components/profile/projects/projects-popup/projects-popup.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { FooterComponent } from './components/home/footer/footer.component';
     LoginComponent,
     RegisterComponent,
     HeroComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectsPopupComponent
   ],
   imports: [
     BrowserModule,
