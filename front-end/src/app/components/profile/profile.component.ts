@@ -22,12 +22,12 @@ export class ProfileComponent implements OnInit {
 
   }
 
-  hideModal(){
-    var skillsPopup = document.querySelector('#skills-popup');
+  // hideModal(){
+  //   var skillsPopup = document.querySelector('#skills-popup');
     
-    skillsPopup.setAttribute("style", "display:none");
-    console.log('works');
-  }
+  //   skillsPopup.setAttribute("style", "display:none");
+  //   console.log('works');
+  // }
   // hideProjectsModal(){
   //   var projectsPopup = document.querySelector('#projects-popup');
     

@@ -22,6 +22,7 @@ import { RegisterComponent } from './components/home/register/register.component
 import { HeroComponent } from './components/home/hero/hero.component';
 import { FooterComponent } from './components/home/footer/footer.component';
 import { ProjectsPopupComponent } from './components/profile/projects/projects-popup/projects-popup.component';
+import { SkillsPopupComponent } from './components/profile/skills/skills-popup/skills-popup.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { ProjectsPopupComponent } from './components/profile/projects/projects-p
     RegisterComponent,
     HeroComponent,
     FooterComponent,
-    ProjectsPopupComponent
+    ProjectsPopupComponent,
+    SkillsPopupComponent
   ],
   imports: [
     BrowserModule,
