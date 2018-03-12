@@ -1,31 +1,64 @@
-.grid-container{
+/* Home Page Container */
+.grid-container {
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "hero hero hero hero hero hero hero hero hero hero hero hero hero hero"
     ". . search search search search search search search search search search . ."
     ". . form form form form form form form form form form . ."
-    "footer footer footer footer footer footer footer footer footer footer footer footer footer footer "
+    "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
 }
-.hero-container{
+
+/* Hero */
+.hero-container {
     grid-area: hero;
-    /* border: 1px dashed red; */
 }
-.search-container{
+
+/* Search */
+.search-container {
     grid-area: search;
-    /* border: 1px dashed red; */
-    /* height: 100px; */
     margin-bottom: 60px;
     border-radius: 5px;
 }
-.register-form-container{
+
+/* Register Form */
+.register-form-container {
     grid-area: form;
-    /* border: 1px dashed red; */
-    /* height: 200px; */
 }
-.footer-container{
+
+/* Footer */
+.footer-container {
     grid-area: footer;
-    /* border: 1px dashed blue; */
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
+
+    .grid-container{
+        grid-template-areas:
+        "hero hero hero hero hero hero hero hero hero hero hero hero hero hero"
+        ". search search search search search search search search search search search search ."
+        "form form form form form form form form form form form form form form"
+        "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+
+    /* Redeclare Grid Areas for Compiling */
+    .hero-container {
+        grid-area: hero;
+    }
+
+    .search-container {
+        grid-area: search;
+    }
+
+    .register-form-container {
+        grid-area: form;
+    }
+
+    .footer-container {
+        grid-area: footer;
+    }
+
 }

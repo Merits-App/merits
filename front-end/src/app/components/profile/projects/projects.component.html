@@ -1,12 +1,17 @@
-<div class="projects-comp">
+<div class="projects-comp"><!-- Project Start -->
+
+  <!-- Header -->
   <div class="comp-header">
     <h1 class="section-header-text">Projects</h1>
     <!-- Will need to add an *ngIf here to detect if content is present -->
     <i class="fas fa-eye"></i>
     <!-- <i class="fas fa-eye hidden"></i> -->
   </div>
+
+  <!-- Project Content -->
   <div class="proj-content">
 
+    <!-- Placeholder Data -->
     <div class="project" (mouseenter)="toggle()">
       <img src="../../../../assets/img/placeholder-2.jpg" alt="project des">
       <div class="overlay" *ngIf="show">
@@ -68,7 +73,8 @@
        </div>
 
   </div>
-</div>
+
+</div><!-- Project End -->
 
 
 

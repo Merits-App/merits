@@ -6,16 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
+  // Properties
 
+  // Methods
   constructor() { }
 
   ngOnInit() {
+
   }
- showModal(){
-    var skillsPopup = document.querySelector('#skills-popup');
-    
-    skillsPopup.setAttribute("style", "display:flex; align-items:center;");
-    console.log('works');
+
+  showModal() {
+
+    const skillsPopup = document.querySelector('#skills-popup');
+
+    skillsPopup.setAttribute('style', 'display:flex; align-items:center;');
   }
+
 }
 
