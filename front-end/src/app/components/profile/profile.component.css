@@ -10,7 +10,7 @@
 .side-nav{
     position: fixed;
     grid-area: nav;
-    background-color: #424242;
+    /* background-color: #424242; */
     width: 25%;
 } 
 .content{
@@ -18,10 +18,6 @@
     /* border: 1px dashed red; */
     margin: 0px 20px;
 }
-/* .skills-container{
-    border: 1px dashed black;
-    margin: 30px;
-} */
 .popup-bg{
     position: fixed;
     width: 100%;
@@ -29,72 +25,4 @@
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 1;
     display: none;
-    /* opacity: 0; */
-}
-h1 {
-  height: 25vh;
-}
-.popup-modal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    width: 900px;
-    /* height: 500px; */
-}
-.close-modal-btn{
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    margin: 10px;
-}
-.close-btn{
-    color: #fff;
-    width: 100%;
-    height: 100%;
-}
-.inputs{
-    /* width: 100%; */
-    margin: 15px 25px;
-}
-.form-input{
-    padding: 0px;
-}
-.program-popup-section{
-    margin: 25px;
-    /* font-size: 50px; */
-}
-.program-popup-section i{
-    font-size: 50px;
-}
-.icons-section{
-    margin: 10px 0px;
-}
-.skills-container{
-    margin: 10px 0px;
-}
-.skill-bubble{
-    background-color: #fff;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 3px;
-}
-.skill-bubble p{
-    margin: 7px;
-    font-size: 12pt;
-    display: inline-block;
-}
-.close{
-    display: inline;
-    margin-left: 10px;
-    cursor: pointer;
-}
-.icon{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-}
-.close-icon{
-    cursor: pointer;
-    color: #fff;
 }

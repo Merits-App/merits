@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../../models/User';
 
 @Component({
   selector: 'app-profile',
@@ -7,15 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  newSkill: User["skills"];
+
   constructor() { }
 
   ngOnInit() {
     console.log('The profile page is connected to the routes.');
+    this.newSkill = { languages: '', otherSkills: ''};
+    console.log(this.newSkill);
   }
-  hideModal(){
-    var popup = document.querySelector('.popup-bg');
+  
+  onSubmit(){
+
+  }
+
+  // hideModal(){
+  //   var skillsPopup = document.querySelector('#skills-popup');
     
-    popup.setAttribute("style", "display: none");
-    console.log('works');
-  }
+  //   skillsPopup.setAttribute("style", "display:none");
+  //   console.log('works');
+  // }
+  // hideProjectsModal(){
+  //   var projectsPopup = document.querySelector('#projects-popup');
+    
+  //   projectsPopup.setAttribute("style", "display:none");
+  //   console.log('works');
+  // }
+  
 }
