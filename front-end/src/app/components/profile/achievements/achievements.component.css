@@ -8,11 +8,11 @@
 }
 
 .econtent {
-    grid-area:econtent;
+    grid-area: econtent;
 }
 
 .ach-date {
-    grid-area:aDate;
+    grid-area: aDate;
 }
 
 /* Text */
@@ -28,6 +28,16 @@ p{
         grid-template-areas:
         "aDate aDate aDate ."
         "econtent econtent econtent econtent";
+    }
+
+    /* Redeclare Grid Areas for Compiling */
+
+    .econtent {
+        grid-area: econtent;
+    }
+
+    .ach-date {
+        grid-area: aDate;
     }
 
   }

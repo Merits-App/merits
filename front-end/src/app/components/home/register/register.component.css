@@ -95,9 +95,39 @@ input:focus {
         ". . state state . ."
     }
 
+
     .form {
         border-radius: 0;
         margin-bottom: 0;
+    }
+
+    /* Redeclare Grid Areas for Compiling */
+    .first-name {
+        grid-area: fname;
+    }
+
+    .last-name {
+        grid-area: lname;
+    }
+
+    .e-mail {
+        grid-area: mail;
+    }
+
+    .create {
+        grid-area: create;
+    }
+
+    .confirm {
+        grid-area: confirm;
+    }
+
+    .city {
+        grid-area: city;
+    }
+
+    .state {
+        grid-area: state
     }
 
 }

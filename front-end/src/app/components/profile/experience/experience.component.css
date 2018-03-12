@@ -36,4 +36,13 @@ p {
     p.body-text {
         margin:10px 10px 30px 0;
     }
+
+    /* Redeclare Grid Areas for Compiling */
+    .econtent {
+        grid-area:econtent;
+    }
+
+    .exp-date {
+        grid-area:eDate;
+    }
 }

@@ -10,7 +10,7 @@
     ". . . forgot forgot";
 }
 
-/* Input Fields */
+/* Grid Areas */
 .username-section {
     grid-area: user;
 }
@@ -23,12 +23,12 @@
     grid-area: btn;
 }
 
-/* Reset Password */
 .forgot-section {
     grid-area: forgot;
     text-align: right;
 }
 
+/* Reset Password */
 .forgot-section p {
     margin: 0;
     transition: .4s all;
@@ -79,9 +79,23 @@ input:active {
         ". forgot forgot .";
     }
 
+    /* Redeclare Grid Areas for Compiling */
     .forgot-section {
+        grid-area: forgot;
         margin: -5px;
         text-align: center;
+    }
+
+    .username-section {
+        grid-area: user;
+    }
+
+    .pass-section {
+        grid-area: pass;
+    }
+
+    .btn-section {
+        grid-area: btn;
     }
 
 }

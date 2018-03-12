@@ -44,4 +44,21 @@
         "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
     }
 
+    /* Redeclare Grid Areas for Compiling */
+    .hero-container {
+        grid-area: hero;
+    }
+
+    .search-container {
+        grid-area: search;
+    }
+
+    .register-form-container {
+        grid-area: form;
+    }
+
+    .footer-container {
+        grid-area: footer;
+    }
+
 }
