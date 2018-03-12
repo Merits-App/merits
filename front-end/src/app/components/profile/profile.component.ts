@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../../models/User';
 
 @Component({
   selector: 'app-profile',
@@ -9,6 +10,7 @@ export class ProfileComponent implements OnInit {
   // Properties
 
   menu = true;
+  newSkill: User['skills'];
 
   // Methods
   constructor() {
@@ -16,6 +18,8 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    this.newSkill = { languages: '', otherSkills: ''};
 
     // Check window size on page load
     const screenWidth = window.innerWidth;
@@ -43,5 +47,20 @@ export class ProfileComponent implements OnInit {
   hideNav() {
     this.menu = false;
   }
+
+  onSubmit() {
+
+  }
+
+  // hideModal(){
+  //   var skillsPopup = document.querySelector('#skills-popup');
+  //   skillsPopup.setAttribute("style", "display:none");
+  //   console.log('works');
+  // }
+  // hideProjectsModal(){
+  //   var projectsPopup = document.querySelector('#projects-popup');
+  //   projectsPopup.setAttribute("style", "display:none");
+  //   console.log('works');
+  // }
 
 }
