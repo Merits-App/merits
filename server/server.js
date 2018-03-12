@@ -40,7 +40,7 @@ app.use(passport.session());
 app.use('/', api);
 
 //Set Static Folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'front-end')));
 
 // Get port from environment and store in Express
 const port = process.env.PORT || '3000';

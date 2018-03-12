@@ -10,10 +10,10 @@ import { SearchResultComponent } from './components/search/search-result/search-
 
 
 const Routes: Routes = [
-  { 
-    path: '', 
-    redirectTo: '/app-home', 
-    pathMatch: 'full' 
+  {
+    path: '',
+    redirectTo: '/app-home',
+    pathMatch: 'full'
   },
   {
     path: 'app-home',
