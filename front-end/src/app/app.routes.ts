@@ -7,6 +7,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { SearchResultComponent } from './components/search/search-result/search-result.component';
 
+
+
 const Routes: Routes = [
   { 
     path: '', 
@@ -25,7 +27,6 @@ const Routes: Routes = [
     path: 'app-search-result',
     component: SearchResultComponent
   },
-   
 ];
 
 
