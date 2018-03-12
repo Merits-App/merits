@@ -17,6 +17,7 @@ export class ProjectsComponent implements OnInit {
 
   }
 
+  // Toggle Overlay
   toggle() {
     this.show = !this.show;
   }

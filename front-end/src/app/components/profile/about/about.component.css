@@ -1,28 +1,7 @@
+/* About Container */
 .mainDiv {
     display: flex;
     flex-direction: column;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: right;
-    margin-bottom: 20px;
-}
-
-.social-circle {
-    height: 35px;
-    width: 35px;
-    background-color: rgb(88, 86, 86);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 0px 20px;
-}
-
-.social-circle:first-child {
-    margin-left: 0;
 }
 
 .inputs {
@@ -65,10 +44,35 @@
     grid-area: state;
 }
 
+/* Name */
 strong {
     color:rgba(255,184,8,0.85);
 }
 
+/* Contact */
 .contact-info {
     margin-bottom: 0;
+}
+
+/* Social */
+.social-icons {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+
+.social-circle {
+    height: 35px;
+    width: 35px;
+    background-color: rgb(88, 86, 86);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0px 20px;
+}
+
+.social-circle:first-child {
+    margin-left: 0;
 }

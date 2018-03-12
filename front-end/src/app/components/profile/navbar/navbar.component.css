@@ -1,3 +1,4 @@
+/* Nav Container */
 .navStyle {
   display: flex;
   justify-content: center;
@@ -8,6 +9,7 @@
   height: 100vh;
 }
 
+/* Image */
 .img-container {
   width: 100%;
   pointer-events: none;
@@ -20,6 +22,7 @@
   pointer-events: none;
 }
 
+/* Nav List */
 a:hover {
   text-decoration-line: underline;
   text-decoration-color: rgba(255, 184, 8, 0.85);
@@ -28,8 +31,4 @@ a:hover {
 a {
   color: white;
   text-decoration: none;
-}
-
-#icon {
-  fill: white;
 }

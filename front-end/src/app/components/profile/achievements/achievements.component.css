@@ -1,20 +1,21 @@
-/* div {
-    margin:5px;
-} */
+/* Achievement Container */
 .achSection{
     display: grid;
-    grid-gap: 10px; 
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "aDate econtent econtent econtent"
 }
-p{
-    margin:10px;
-    margin-left: 0px;
-}
-.econtent{
+
+.econtent {
     grid-area:econtent;
 }
-.ach-date{
+
+.ach-date {
     grid-area:aDate;
+}
+
+/* Text */
+p{
+    margin: 10px 10px 10px 0;
 }
