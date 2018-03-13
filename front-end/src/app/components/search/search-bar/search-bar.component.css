@@ -1,0 +1,25 @@
+.search-wrap{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas: "button bar";
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.35);
+}
+.search-bar{
+    width: 100%;
+    grid-area: bar;
+    border-radius: 0px 5px 5px 0px;
+}
+button{
+    grid-area: button;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #ffb808;
+    color: #fff;
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+input:focus {
+    outline: none;
+}

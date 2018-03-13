@@ -1,3 +1,50 @@
-<p>
-  achievements works!
-</p>
+<!-- Achievements Start -->
+
+<!-- Header -->
+<h1 class="section-header-text">Awards</h1>
+
+<!-- Achievements Content -->
+<div class="achSection"><p class="date-text ach-date">Mar 2018</p>
+  <div class="econtent">
+    <h3 class="subhead-1-text ">Boo Brilliant Designer</h3>
+    <p class="body-text ">mmodi voluptate obcaecati dignissimos quae illo officia autem!</p>
+  </div>
+</div>
+
+<div class="achSection">
+  <p class="date-text ach-date">Jan 2018</p>
+  <div class="econtent">
+    <h3 class="subhead-1-text ">Awesome Software Engineer</h3>
+    <p class="body-text ">Lorem ipsum doptate obcaecati dignissimos quae illo officia autem!</p>
+  </div>
+</div>
+
+<!-- Modal -->
+<div ng-app="" hidden>
+
+  <p>Awards: </p>
+  <p>
+    <input type="text" ng-model="awards" placeholder="Awards or Achievements">
+  </p>
+  <p>
+    <label>Date of Reciept : </label>
+    <br>
+    <select name="awdmonth" id="awdmonth" ng-model="data.awdmonth">
+      <option>MM</option>
+      <option>Jan</option>
+      <option>Feb</option>
+      <option>March</option>
+    </select>
+    <select name="awdyr" id="awdyr" ng-model="data.awdyr">
+      <option>YYYY</option>
+      <option>2000</option>
+      <option>2001</option>
+      <option>2002</option>
+    </select>
+  </p>
+  <p>
+    <textarea type="text" ng-model="addiInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+  </p>
+
+</div>
+<!-- Achievements End -->

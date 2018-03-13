@@ -1,0 +1,51 @@
+/* Headers */
+.header {
+    width: 100%;
+    position: relative;
+}
+
+h2 {
+    margin: 3px 0px;
+}
+
+/* Programming Skills */
+
+.skills-icons {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.skill-icon {
+    font-size: 75px;
+    margin: 15px;
+}
+
+.edit-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    transform: scale(1.8);
+}
+
+.edit-icon:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all .3s;
+}
+
+/* Other Skills */
+.skills-container {
+    color: #fff;
+}
+
+.skill-bubble {
+    background-color: #424242;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 3px;
+}
+
+.skill-bubble p {
+    margin: 7px;
+}
