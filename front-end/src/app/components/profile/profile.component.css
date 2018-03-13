@@ -46,7 +46,7 @@ i.nav-icon.fa-arrow-left {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
+    z-index: 10000;
     display: none;
 }
 
@@ -62,6 +62,9 @@ i.nav-icon.fa-arrow-left {
     width: 25px;
     cursor: pointer;
     margin: 10px;
+}
+.close-modal-btn i{
+    font-size: 40px;
 }
 
 .close-btn {
