@@ -21,6 +21,12 @@ h2 {
     margin: 15px;
 }
 
+.eye-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
 .edit-icon {
     position: absolute;
     bottom: 20px;

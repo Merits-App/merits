@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RoutingModule } from './app.routes';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -23,6 +23,10 @@ import { HeroComponent } from './components/home/hero/hero.component';
 import { FooterComponent } from './components/home/footer/footer.component';
 import { ProjectsPopupComponent } from './components/profile/projects/projects-popup/projects-popup.component';
 import { SkillsPopupComponent } from './components/profile/skills/skills-popup/skills-popup.component';
+import { AboutPopupComponent } from './components/profile/about/about-popup/about-popup.component';
+import { AchievementsPopupComponent } from './components/profile/achievements/achievements-popup/achievements-popup.component';
+import { ExperiencePopupComponent } from './components/profile/experience/experience-popup/experience-popup.component';
+import { EducationPopupComponent } from './components/profile/education/education-popup/education-popup.component';
 
 
 @NgModule({
@@ -45,8 +49,12 @@ import { SkillsPopupComponent } from './components/profile/skills/skills-popup/s
     HeroComponent,
     FooterComponent,
     ProjectsPopupComponent,
-    SkillsPopupComponent
-  ],
+    SkillsPopupComponent,
+    AboutPopupComponent,
+    AchievementsPopupComponent,
+    ExperiencePopupComponent,
+    EducationPopupComponent,
+   ],
   imports: [
     BrowserModule,
     RoutingModule,

@@ -4,19 +4,40 @@
 <div (window:resize)="toggleNav($event)">
 
   <!-- Modal Start -->
-  <div id ="skills-popup" class="popup-bg">
-    <skills-popup></skills-popup>
+  <!-- About Popup -->
+  <div id="about-popup" class="popup-bg">
+      <about-popup></about-popup>
+    </div>
+  <!--Education popup-->
+  <div id="education-popup" class="popup-bg">
+      <education-popup></education-popup>
+    </div>
+  <!-- Experience popup -->
+  <div id="experience-popup" class="popup-bg">
+    <experience-popup></experience-popup>
   </div>
-
+  <!--Project popup-->
   <div id="projects-popup" class="popup-bg">
     <projects-popup></projects-popup>
   </div>
+  <!--Skills popup -->
+  <div id="skills-popup" class="popup-bg">
+      <skills-popup></skills-popup>
+    </div>
+  <!-- Achievements popup -->
+  <div id="achieve-popup" class="popup-bg">
+    <achievements-popup></achievements-popup>
+  </div>
+
   <!-- Modal End -->
 
-  <div class="profile-grid-container"><!-- Profile Page Start -->
+  <div class="profile-grid-container">
+    <!-- Profile Page Start -->
 
-    <i class="fas fa-bars nav-icon" (click)="showNav()" *ngIf="!menu"></i><!-- Hamburger Icon -->
-    <i class="fas fa-arrow-left nav-icon" (click)="hideNav()" *ngIf="menu"></i><!-- Arrow Icon -->
+    <i class="fas fa-bars nav-icon" (click)="showNav()" *ngIf="!menu"></i>
+    <!-- Hamburger Icon -->
+    <i class="fas fa-arrow-left nav-icon" (click)="hideNav()" *ngIf="menu"></i>
+    <!-- Arrow Icon -->
 
     <!-- Nav Comp. -->
     <div class="side-nav" *ngIf="menu">
@@ -36,6 +57,7 @@
       <app-achievements></app-achievements>
     </div>
 
-  </div><!-- Profile Page End -->
+  </div>
+  <!-- Profile Page End -->
 
 </div>

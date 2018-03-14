@@ -1,64 +1,78 @@
 <!-- About Start -->
-<section  id="about-section">
+<section id="about-section">
 
-<!-- Name -->
-<div class="mainDiv">
-  <h1 class="name-text">Dude
-    <strong>Person</strong>
-  </h1>
+  <!-- Name -->
 
-  <!-- Contact -->
-  <h2 class="title-text">Developer</h2>
-  <p class="contact-info">Fresno, CA 00000 [555]555-5555 dudeperson@dude.com <a href="#">superdudews.com</a></p>
-
-  <!-- Bio -->
-  <p class="body-text">Administrative Assistant with +3 years of experience in a
-    sensitive corporate environment. Outgoing and detail-oriented, I am proficient at building
-     and maintaining professional relationships. Have an Associate's Degree in Office Administration.
-  </p>
-
-  <!-- Social -->
-  <div class="social-icons">
-    <div class="social-circle"><i class="fab fa-twitter"></i></div>
-    <div class="social-circle"><i class="fab fa-facebook"></i></div>
-    <div class="social-circle"><i class="fab fa-linkedin-in"></i></div>
-  </div>
-
-  <!-- Modal -->
-  <form class="form" hidden>
-    <div class="inputs">
-      <p>
-        <input class="form-input first-name" type="text" placeholder="First Name">
-        <input class="form-input last-name" type="text" placeholder="Last Name">
-        <input class="form-input title" type="text" placeholder="Title">
-        <input class="form-input city" placeholder="City">
-        <select name="state" id="state" ng-model="data.state">
-          <option>--State--</option>
-          <option>PA</option>
-          <option>CA</option>
-          <option>PH</option>
-        </select>
-        <input type="text" ng-model="phone" placeholder="Phone">
-        <br>
-        <br>
-        <input type="text" ng-model="email" placeholder="Email">
-        <input type="text" ng-model="website" placeholder="Website">
-        <br>
-        <br>
-        <textarea class="textarea-styled" type="text" ng-model="infoAbout" maxlength="500" placeholder="Tell the World a Little About You!"></textarea>
-      </p>
-      <label>Social Media </label>
-      <br>
-      <br>
-      <input type="text" ng-model="twitter" placeholder="Twitter">
-      <br>
-      <br>
-      <input type="text" ng-model="linkedIn" placeholder="LinkedIn">
-      <br>
-      <br>
-      <input type="text" ng-model="faceBook" placeholder="Facebook">
+  <div class="mainDiv">
+    <div class="header">
+        <i class="fas fa-eye eye-icon "></i>
+      <div class="edit-btn-cont" (click)="showAboutModal()">
+      <i class="fas fa-edit edit-icon"></i>
+      </div>
+      <h1 class="name-text">Dude
+        <strong>Person</strong>
+      </h1>
     </div>
-  </form>
-</div>
+
+    <!-- Contact -->
+    <h2 class="title-text">Developer</h2>
+    <p class="contact-info">Fresno, CA 00000 [555]555-5555 dudeperson@dude.com
+      <a href="#">superdudews.com</a>
+    </p>
+
+    <!-- Bio -->
+    <p class="body-text">Administrative Assistant with +3 years of experience in a sensitive corporate environment. Outgoing and detail-oriented,
+      I am proficient at building and maintaining professional relationships. Have an Associate's Degree in Office Administration.
+    </p>
+
+    <!-- Social -->
+    <div class="social-icons">
+      <div class="social-circle">
+        <i class="fab fa-twitter"></i>
+      </div>
+      <div class="social-circle">
+        <i class="fab fa-facebook"></i>
+      </div>
+      <div class="social-circle">
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <form class="form" hidden>
+      <div class="inputs">
+        <p>
+          <input class="form-input first-name" type="text" placeholder="First Name">
+          <input class="form-input last-name" type="text" placeholder="Last Name">
+          <input class="form-input title" type="text" placeholder="Title">
+          <input class="form-input city" placeholder="City">
+          <select name="state" id="state" ng-model="data.state">
+            <option>--State--</option>
+            <option>PA</option>
+            <option>CA</option>
+            <option>PH</option>
+          </select>
+          <input type="text" ng-model="phone" placeholder="Phone">
+          <br>
+          <br>
+          <input type="text" ng-model="email" placeholder="Email">
+          <input type="text" ng-model="website" placeholder="Website">
+          <br>
+          <br>
+          <textarea class="textarea-styled" type="text" ng-model="infoAbout" maxlength="500" placeholder="Tell the World a Little About You!"></textarea>
+        </p>
+        <label>Social Media </label>
+        <br>
+        <br>
+        <input type="text" ng-model="twitter" placeholder="Twitter">
+        <br>
+        <br>
+        <input type="text" ng-model="linkedIn" placeholder="LinkedIn">
+        <br>
+        <br>
+        <input type="text" ng-model="faceBook" placeholder="Facebook">
+      </div>
+    </form>
+  </div>
 </section>
 <!-- About End -->

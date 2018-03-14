@@ -1,0 +1,46 @@
+<div class="popup-grid">
+  <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
+    <div class="close-modal-btn" (click)="hideExpModal()">
+      <i class="fas fa-times close-btn"></i>
+    </div>
+    <div class="inputs">
+      <h4 class="form-input-label expStartLabel">Date of start</h4>
+      <input type="text" class="form-input companyName" placeholder="Company Name">
+      <select name="startMonth" class="startMonth">
+        <option>MM</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>March</option>
+      </select>
+      <select name="startYear" class="startYear">
+        <option>YYYY</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+      </select>
+      <input type="text" class="form-input title" placeholder="Title">
+      <h4 class="form-input-label expEndLabel">Date of completion</h4>
+      <select name="endMonth" class="endMonth">
+        <option>MM</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>March</option>
+      </select>
+      <select name="endYear" class="endYear">
+        <option>YYYY</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+      </select>
+      <div class="current">
+        <input type="checkbox">
+        <label class="form-input-label">Current :</label>
+      </div>
+      <textarea type="text" class="textarea-styled addInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+    </div>
+    <div class="button-section">
+      <button>Save!</button>
+    </div>
+
+  </form>
+</div>
