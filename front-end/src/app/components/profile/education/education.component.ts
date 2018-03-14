@@ -11,5 +11,8 @@ export class EducationComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  showEduModal() {
+    const eduPopup = document.querySelector('#education-popup');
+    eduPopup.setAttribute('style', 'display:flex; align-items:center;');
+    }
 }

@@ -11,5 +11,8 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  showAboutModal() {
+    const aboutPopup = document.querySelector('#about-popup');
+    aboutPopup.setAttribute('style', 'display:flex; align-items:center;');
+    }
 }

@@ -11,5 +11,8 @@ export class AchievementsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  showAchieveModal() {
+    const achievePopup = document.querySelector('#achieve-popup');
+    achievePopup.setAttribute('style', 'display:flex; align-items:center;');
+    }
 }

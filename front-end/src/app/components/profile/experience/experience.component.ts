@@ -11,5 +11,8 @@ export class ExperienceComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  showExpModal() {
+    const experience = document.querySelector('#experience-popup');
+    experience.setAttribute('style', 'display:flex; align-items:center;');
+    }
 }
