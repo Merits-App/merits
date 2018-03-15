@@ -3,7 +3,8 @@ const router = express.Router();
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
 const config = require('../config/database');
-const user = require('../models/user');
+
+const User = require('../models/user');
 
 //get API listing
 router.get('/', (req, res) => {
@@ -11,18 +12,20 @@ router.get('/', (req, res) => {
 });
 
 //New Register
-router.post('/app-home', (req, res, next) => {
-    let newUser = new user ({
+router.post('/', (req, res, next) => {
+
+    let newUser = new User ({
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
-        createPassword: req.body.password,
-        confirmPassword: req.body.password,
+        username: req.body.username,
+        password: req.body.password,
         city: req.body.city,
-        state: req.body.state
+        state: req.body.state,
     });
+        //console.log('req.body', req.body)
 
-    user.addUser(newUser, (err, user) => {
+    User.addUser(newUser, (err, user) => {
         if(err) {
             res.json({success: false, msg:
                 'Failed to register user'});
@@ -33,16 +36,16 @@ router.post('/app-home', (req, res, next) => {
 });
 
 //Authentication with Passport
-router.post('/app-home', (req, res, next) => {
+router.post('/app-authenticate', (req, res, next) => {
     const username = req.body.username;
     const password = req.body.password;
 
-    user.getUserByUsername(username, (err, user) => {
+    User.getUserByUsername(username, (err, user) => {
         if(err) throw err;
         if(!user) {
             return res.json({success: false, msg: 'User not found'});
         }
-        user.comparePassword(password, user.password, (err, isMatch) => {
+        User.comparePassword(password, user.password, (err, isMatch) => {
             if(err) throw err;
             if(isMatch){
                 const token = jwt.sign({data:user},
@@ -66,7 +69,7 @@ router.post('/app-home', (req, res, next) => {
 });
 
 //Profile 
-router.get('/app-profile', passport.authenticate('jwt', {session:false}), (req, res, next) => {
+router.get('/app-profile',  passport.authenticate('jwt', {session:false}), (req, res, next) => {
     res.json({user: req.user});
 });
 
