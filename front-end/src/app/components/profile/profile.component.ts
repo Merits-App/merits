@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../../models/User';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -8,17 +10,21 @@ import { User } from '../../models/User';
 })
 export class ProfileComponent implements OnInit {
   // Properties
-
+  user: Object;
   menu = true;
   newSkill: User['skills'];
 
   // Methods
-  constructor() {
+  constructor(private authService: AuthService, private router: Router) {
 
   }
-
   ngOnInit() {
-
+    this.authService.getProfile().subscribe(profile => {
+      this.user = profile.user;
+    },
+    err => {
+      return false;
+    });
     this.newSkill = { languages: '', otherSkills: ''};
 
     // Check window size on page load
