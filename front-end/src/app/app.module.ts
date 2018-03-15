@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RoutingModule } from './app.routes';
 import { FormsModule } from '@angular/forms';
+import { FlashMessageModule } from 'angular-flash-message';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -27,6 +29,10 @@ import { AboutPopupComponent } from './components/profile/about/about-popup/abou
 import { AchievementsPopupComponent } from './components/profile/achievements/achievements-popup/achievements-popup.component';
 import { ExperiencePopupComponent } from './components/profile/experience/experience-popup/experience-popup.component';
 import { EducationPopupComponent } from './components/profile/education/education-popup/education-popup.component';
+
+import { AuthService } from './services/auth.service';
+import { ValidateService } from './services/validate.service';
+
 
 
 @NgModule({
@@ -58,9 +64,11 @@ import { EducationPopupComponent } from './components/profile/education/educatio
   imports: [
     BrowserModule,
     RoutingModule,
-    FormsModule
+    FormsModule,
+    FlashMessageModule,
+    HttpClient,
   ],
-  providers: [],
+  providers: [ ValidateService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

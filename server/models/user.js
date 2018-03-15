@@ -16,10 +16,6 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    username: {
-        type: String,
-        required: true
-    },
     password: {
         type: String,
         required: true
@@ -36,8 +32,8 @@ const UserSchema = mongoose.Schema({
 
 const User = module.exports = mongoose.model('User', UserSchema);
 
-module.exports.getUserByUsername= (username, callback) => {
-    const query = {username: username}
+module.exports.getUserByEmail= (email, callback) => {
+    const query = {email: email}
     User.findOne(query, callback);
 }
 
