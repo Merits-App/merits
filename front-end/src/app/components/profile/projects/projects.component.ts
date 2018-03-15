@@ -22,6 +22,7 @@ export class ProjectsComponent implements OnInit {
     this.show = !this.show;
   }
 
+  //Function for showing the pop up modal
   showModal(){
     var skillsPopup = document.querySelector('#projects-popup');
     
