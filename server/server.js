@@ -34,18 +34,28 @@ app.use(cors());
 app.use(passport.initialize());
 app.use(passport.session());
 
-//require('./config/passport')(passport);
+require('./config/passport')(passport);
 
 // Set our api routes
-app.use('/', api);
+app.use('/api', api);
+
+// Index Route
+app.get('/', (req, res) => {
+    res.send('Invalid Endpoint');
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
+});
+
+
 
 //Set Static Folder
-app.use(express.static(path.join(__dirname, 'front-end')));
+app.use(express.static(path.join( __dirname, 'public' )));
 
-// Get port from environment and store in Express
-const port = process.env.PORT || '3000';
-app.set('port', port);
+//Set Port 
+const port = 3000;
 
 // Listen on provided port, on all network interfaces
-
-app.listen(port, () => console.log(`API running on localhost:${port}`));
+app.listen(port, () =>  { 
+    console.log('Merits API running on port ' +port)});

@@ -35,18 +35,3 @@ services:
 
 networks:
   appnet: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
