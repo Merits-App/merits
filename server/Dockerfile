@@ -21,5 +21,3 @@ EXPOSE 3000
 
 # Serve the app
 CMD ["npm", "start"]
-
-# ENV COMPOSE_TLS_VERSION=TLSv1_2
