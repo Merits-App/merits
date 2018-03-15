@@ -2,11 +2,10 @@
 
 <!-- Header -->
 <div class="header">
-    <i class="fas fa-eye eye-icon "></i>
+  <i class="fas fa-eye eye-icon "></i>
   <div class="edit-btn-cont" (click)="showAchieveModal()">
     <i class="fas fa-edit edit-icon"></i>
   </div>
-  
   <h1 class="section-header-text">Awards</h1>
 </div>
 <!-- Achievements Content -->
@@ -27,31 +26,5 @@
 </div>
 
 <!-- Modal -->
-<div ng-app="" hidden>
 
-  <p>Awards: </p>
-  <p>
-    <input type="text" ng-model="awards" placeholder="Awards or Achievements">
-  </p>
-  <p>
-    <label>Date of Reciept : </label>
-    <br>
-    <select name="awdmonth" id="awdmonth" ng-model="data.awdmonth">
-      <option>MM</option>
-      <option>Jan</option>
-      <option>Feb</option>
-      <option>March</option>
-    </select>
-    <select name="awdyr" id="awdyr" ng-model="data.awdyr">
-      <option>YYYY</option>
-      <option>2000</option>
-      <option>2001</option>
-      <option>2002</option>
-    </select>
-  </p>
-  <p>
-    <textarea type="text" ng-model="addiInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
-  </p>
-
-</div>
 <!-- Achievements End -->
