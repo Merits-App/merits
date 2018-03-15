@@ -1,5 +1,29 @@
 /* Achievement Container */
-.achSection{
+.header {
+    width: 100%;
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+}
+
+.edit-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: scale(1.8);
+}
+
+.edit-icon:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all .3s;
+}
+
+.achSection {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;

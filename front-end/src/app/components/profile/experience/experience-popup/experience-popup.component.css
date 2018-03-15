@@ -1,0 +1,69 @@
+/* Experience pop up modal  */
+.inputs {
+  margin: 25px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "expStartLabel . . . ."
+    "startMonth startYear companyName companyName companyName"
+    "expEndLabel expEndLabel title title title "
+    "endMonth endYear . . ."
+    "current . addInfo addInfo addInfo";
+}
+.expStartLabel {
+  grid-area: expStartLabel;
+}
+.expEndLabel {
+  grid-area: expEndLabel;
+}
+.startMonth {
+  border: none;
+  border-radius: 8px;
+  grid-area: startMonth;
+}
+.startYear {
+  border: none;
+  border-radius: 8px;
+  grid-area: startYear;
+}
+.endMonth {
+  border: none;
+  border-radius: 8px;
+  grid-area: endMonth;
+}
+.endYear {
+  border: none;
+  border-radius: 8px;
+  grid-area: endYear;
+}
+.companyName {
+  grid-area: companyName;
+}
+.title {
+  grid-area: title;
+}
+.current {
+  grid-area: current;
+}
+.addInfo {
+  grid-area: addInfo;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+}
+.button-section {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13pt;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+  color: #757575;
+  cursor: pointer;
+}

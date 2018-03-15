@@ -1,7 +1,30 @@
 /* About Container */
+.header {
+    width: 100%;
+    position: relative;
+}
+
 .mainDiv {
     display: flex;
     flex-direction: column;
+}
+.eye-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.edit-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    transform: scale(1.8);
+}
+
+.edit-icon:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all .3s;
 }
 
 .inputs {

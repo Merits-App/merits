@@ -1,0 +1,38 @@
+<div class="popup-grid">
+  <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
+    <div class="close-modal-btn" (click)="hideEduModal()"> 
+      <i class="fas fa-times close-btn"></i>
+    </div>
+    <div class="inputs">
+        <h4 class="form-input-label eduLabel">Date of Completion</h4>
+        <select class="edustartMonth" name="monthEnd">
+          <option>MM</option>
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>March</option>
+        </select>
+        <select class="edustartYear" name="yrEnd">
+          <option>YYYY</option>
+          <option>2000</option>
+          <option>2001</option>
+          <option>2002</option>
+        </select>
+        <input type="text" class="form-input insName" placeholder="Name of Institution">
+        <div class="current">
+          <input type="checkbox">
+          <label class="form-input-label">Current :</label>
+        </div>
+        <input type="text" class="form-input study" placeholder="Field of Study">
+        <select name="degreeSelect" class="degree" placeholder="Degree">
+          <option>Masters</option>
+          <option>Under Graduate</option>
+          <option>High School</option>
+        </select>
+        <textarea type="text" class="textarea-styled eduText" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+      </div>
+      <div class="button-section">
+          <button>Save!</button>
+        </div>
+        </form>
+        
+</div>

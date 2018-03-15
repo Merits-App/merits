@@ -1,48 +1,70 @@
 /* Experience Container */
+/* Education Container */
+
+.header {
+  width: 100%;
+  position: relative;
+}
+.eye-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  transform: scale(1.8);
+}
+
+.edit-icon:hover {
+  cursor: pointer;
+  transform: scale(2);
+  transition: all .3s;
+}
 .expSection {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "eDate econtent econtent econtent";
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "eDate econtent econtent econtent";
 }
 
 .econtent {
-    grid-area:econtent;
+  grid-area: econtent;
 }
 
 .exp-date {
-    grid-area:eDate;
+  grid-area: eDate;
 }
 
 /* Text */
 p {
-    margin:10px 10px 10px 0;
+  margin: 10px 10px 10px 0;
 }
 
 .date-text {
-    margin-bottom: -10px;
+  margin-bottom: -10px;
 }
 
 /* Media Queries */
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
+  .expSection {
+    grid-template-areas:
+      "eDate eDate eDate ."
+      "econtent econtent econtent econtent";
+  }
 
-    .expSection {
-        grid-template-areas:
-        "eDate eDate eDate ."
-        "econtent econtent econtent econtent";
-    }
+  p.body-text {
+    margin: 10px 10px 30px 0;
+  }
 
-    p.body-text {
-        margin:10px 10px 30px 0;
-    }
+  /* Redeclare Grid Areas for Compiling */
+  .econtent {
+    grid-area: econtent;
+  }
 
-    /* Redeclare Grid Areas for Compiling */
-    .econtent {
-        grid-area:econtent;
-    }
-
-    .exp-date {
-        grid-area:eDate;
-    }
+  .exp-date {
+    grid-area: eDate;
+  }
 }

@@ -1,0 +1,38 @@
+<!--Achievement/Awards Popup modal Begins -->
+<div class="popup-grid">
+  <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
+    <div class="close-modal-btn" (click)="hideAchieveModal()">
+      <i class="fas fa-times close-btn"></i>
+    </div>
+    <div class="inputs">
+      <h4 class="form-input-label awardReciept">Date of reciept</h4>
+      <select name="awardMonth" class="awardMonth">
+        <option selected value="">Month</option>
+        <option>January</option>
+        <option>Febraury</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+      <select name="awardYear" class="awardYear">
+        <option selected value="">Year</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+      </select>
+      <input type="text" class="form-input awardTitle" placeholder="Awards or Achievements Title">
+      <textarea type="text" class="textarea-styled addInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+    </div>
+    <div class="btn-section">
+      <button class="submit-btn" type="submit">Save Changes</button>
+    </div>
+  </form>
+</div>
+<!--Achievement/Awards Popup modal ends -->
