@@ -1,4 +1,4 @@
-<form class="form"> <!-- Form Start -->
+<form class="form" (submit)="registrationSubmit()"> <!-- Form Start -->
 
   <!-- Form Header -->
   <div class="title-section">
@@ -7,13 +7,13 @@
 
   <!-- Form Fields -->
   <div class="inputs">
-    <input class="form-input first-name"type="text" placeholder="First Name">
-    <input class="form-input last-name"type="text" placeholder="Last Name">
-    <input class="form-input e-mail"type="email" placeholder="E-mail">
-    <input class="form-input create"type="password" placeholder="Create Password">
-    <input class="form-input confirm"type="password" placeholder="Confirm Password">
-    <input class="form-input city"type="text" placeholder="City">
-    <select class="state" name="State" id="state" placeholder="State">
+    <input class="form-input first-name"type="text" [(ngModel)]="firstName" name="firstName" placeholder="First Name">
+    <input class="form-input last-name"type="text" [(ngModel)]="lastName" name="lastName"  placeholder="Last Name">
+    <input class="form-input e-mail"type="email" [(ngModel)]="email" name="email"  placeholder="E-mail">
+    <input class="form-input create"type="password" [(ngModel)]="password" name="password"  placeholder="Create Password">
+    <input class="form-input confirm"type="password" [(ngModel)]="confirmPassword" name="confirmPassword"  placeholder="Confirm Password">
+    <input class="form-input city"type="text" [(ngModel)]="city" name="city"  placeholder="City">
+    <select class="state" [(ngModel)]="state" name="state" id="state" placeholder="State">
         <option selected="selected">State</option>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
@@ -71,7 +71,7 @@
 
   <!-- Submit -->
   <div class="button-section">
-    <button routerLink="/app-profile">Create My Account!</button>
+    <button>Create My Account!</button>
   </div>
 
 </form><!-- Form End -->
