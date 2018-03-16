@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RoutingModule } from './app.routes';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
@@ -29,6 +30,10 @@ import { ExperiencePopupComponent } from './components/profile/experience/experi
 import { EducationPopupComponent } from './components/profile/education/education-popup/education-popup.component';
 
 // import { HttpClientModule } from '@angular/common/http'
+import { AuthService } from './services/auth.service';
+import { ValidateService } from './services/validate.service';
+
+
 
 @NgModule({
   declarations: [
@@ -59,10 +64,12 @@ import { EducationPopupComponent } from './components/profile/education/educatio
   imports: [
     BrowserModule,
     RoutingModule,
-    FormsModule
+    FormsModule,
     // HttpClientModule
+    HttpModule
   ],
-  providers: [],
+
+  providers: [AuthService, ValidateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

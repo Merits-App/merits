@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 // Import rxjs map operator
 import 'rxjs/add/operator/map';
@@ -36,8 +36,7 @@ export class AppComponent implements OnInit {
 //       .map(res => res.json())
 //       .subscribe(() => {
 //         this.getAllPersons();
-//       })
-    
+//       }
 //     }
 
 //   // Get all persons from API
