@@ -4,15 +4,19 @@
 <div class="header">
   <i class="fas fa-eye eye-icon "></i>
   <div class="edit-btn-cont" (click)="showAchieveModal()">
-    <i class="fas fa-edit edit-icon"></i>
+    <i class="fas fa-plus edit-icon"></i>
   </div>
   <h1 class="section-header-text">Awards</h1>
 </div>
 <!-- Achievements Content -->
 <div class="achSection">
   <p class="date-text ach-date">Mar 2018</p>
+
   <div class="econtent">
-    <h3 class="subhead-1-text ">Boo Brilliant Designer</h3>
+    <h3 class="subhead-1-text ">Boo Brilliant Designer
+        <!-- <div class="edit-btn-cont" > --> 
+      <i class="fas fa-edit edit-popup " (click)="showAchieveEditModal()"></i>
+    </h3>
     <p class="body-text ">mmodi voluptate obcaecati dignissimos quae illo officia autem!</p>
   </div>
 </div>
@@ -20,7 +24,9 @@
 <div class="achSection">
   <p class="date-text ach-date">Jan 2018</p>
   <div class="econtent">
-    <h3 class="subhead-1-text ">Awesome Software Engineer</h3>
+    <h3 class="subhead-1-text ">Awesome Software Engineer
+        <i class="fas fa-edit edit-popup "></i>
+    </h3>
     <p class="body-text ">Lorem ipsum doptate obcaecati dignissimos quae illo officia autem!</p>
   </div>
 </div>

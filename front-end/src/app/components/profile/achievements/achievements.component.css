@@ -1,67 +1,72 @@
 /* Achievement Container */
 .header {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .eye-icon {
-    position: absolute;
-    bottom: 20px;
-    right: 60px;
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
 }
 
 .edit-icon {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    transform: scale(1.8);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transform: scale(1.8);
 }
 
 .edit-icon:hover {
-    cursor: pointer;
-    transform: scale(2);
-    transition: all .3s;
+  cursor: pointer;
+  transform: scale(2);
+  transition: all 0.3s;
 }
-
+.edit-popup {
+  color: darkgoldenrod;
+  transform: scale(.8);
+}
+.edit-popup:hover {
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s;
+}
 .achSection {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "aDate econtent econtent econtent"
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "aDate econtent econtent econtent";
 }
 
 .econtent {
-    grid-area: econtent;
+  grid-area: econtent;
 }
 
 .ach-date {
-    grid-area: aDate;
+  grid-area: aDate;
 }
 
 /* Text */
-p{
-    margin: 10px 10px 10px 0;
+p {
+  margin: 10px 10px 10px 0;
 }
 
 /* Media Queries */
 
-@media screen and (max-width: 650px){
-
-    .achSection {
-        grid-template-areas:
-        "aDate aDate aDate ."
-        "econtent econtent econtent econtent";
-    }
-
-    /* Redeclare Grid Areas for Compiling */
-
-    .econtent {
-        grid-area: econtent;
-    }
-
-    .ach-date {
-        grid-area: aDate;
-    }
-
+@media screen and (max-width: 650px) {
+  .achSection {
+    grid-template-areas:
+      "aDate aDate aDate ."
+      "econtent econtent econtent econtent";
   }
+
+  /* Redeclare Grid Areas for Compiling */
+
+  .econtent {
+    grid-area: econtent;
+  }
+
+  .ach-date {
+    grid-area: aDate;
+  }
+}

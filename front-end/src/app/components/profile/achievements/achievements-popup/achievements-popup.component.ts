@@ -1,18 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'achievements-popup',
-  templateUrl: './achievements-popup.component.html',
-  styleUrls: ['./achievements-popup.component.css']
+  selector: "achievements-popup",
+  templateUrl: "./achievements-popup.component.html",
+  styleUrls: ["./achievements-popup.component.css"]
 })
 export class AchievementsPopupComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-  hideAchieveModal(){
-    const achievePopup = document.querySelector('#achieve-popup');
+  // awardTitle = String;
+  awardTitle = "Boo Brilliant Designer";
+  awardYear = String;
+  constructor() {}
+  updateOnSuccess = false;
+  ngOnInit() {}
+  hideAchieveModal() {
+    const achievePopup = document.querySelector("#achieve-newPopup");
     achievePopup.setAttribute("style", "display:none");
+    const achieveEditPopup = document.querySelector("#achieve-editPopup");
+    achieveEditPopup.setAttribute("style", "display:none");
+  }
+  
+  update() {
+    const updateAchievements = {
+      AwardTitle: this.awardTitle
+      // AwardMonth: this.awardMonth
+    };
   }
 }
