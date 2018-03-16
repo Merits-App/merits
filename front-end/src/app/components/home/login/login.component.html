@@ -1,4 +1,4 @@
-<form (submit)="onLoginSubmit()">
+<form #loginForm="ngForm" (ngSubmit)="onLoginSubmit()">
   <div class="form-group login-wrap">
     <!--Email-->
     <div class="email-section">
@@ -10,7 +10,7 @@
     </div>
     <!-- submission -->
     <div class="btn-section">
-      <button type="submit" routerLink="/app-profile">Login</button>
+      <button type="submit">Login</button>
     </div>
     <div class="forgot-section">
       <p>Reset Password</p>
