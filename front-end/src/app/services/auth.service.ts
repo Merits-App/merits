@@ -1,33 +1,35 @@
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import { Http, Headers } from '@angular/http';
+import { environment } from './../../environments/environment';
 
 
 @Injectable()
 export class AuthService {
   authToken: any;
   user: any;
+  private apiUrl = environment.apiUrl;
 
   constructor(private http: Http) { }
 
   registerUser(user) {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/api/app-register', user, {headers: headers})
+    return this.http.post(this.apiUrl + 'api/app-register', user, {headers: headers})
       .map(res => res.json ());
   }
 
   authenticateUser(user) {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/api/app-login', user, {headers: headers})
+    return this.http.post(this.apiUrl + '/api/app-login', user, {headers: headers})
       .map(res => res.json ());
   }
 
   getProfile() {
     const headers = new Headers();
     headers.append('Authorization', 'this.authToken');
-    return this.http.post('http://localhost:3000/api/app-profile', {headers: headers})
+    return this.http.post(this.apiUrl + '/api/app-profile', {headers: headers})
       .map(res => res.json ());
   }
 
