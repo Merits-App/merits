@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RoutingModule } from './app.routes';
 import { FormsModule } from '@angular/forms';
-import { FlashMessageModule } from 'angular-flash-message';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
@@ -31,7 +30,7 @@ import { ExperiencePopupComponent } from './components/profile/experience/experi
 import { EducationPopupComponent } from './components/profile/education/education-popup/education-popup.component';
 
 import { AuthService } from './services/auth.service';
-import { ValidateService } from './services/validate.service';
+// import { ValidateService } from './services/validate.service';
 
 
 
@@ -65,10 +64,10 @@ import { ValidateService } from './services/validate.service';
     BrowserModule,
     RoutingModule,
     FormsModule,
-    FlashMessageModule,
-    HttpClient,
+    HttpClient
   ],
-  providers: [ ValidateService, AuthService],
+    // add Validate Service to providers
+  providers: [ AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
