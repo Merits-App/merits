@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormBuilder, FormGroup} from '@angular/forms';
 import { Router } from '@angular/router';
+import { Http, Headers } from '@angular/http';
 // import { HttpClient } from '@angular/common/http'
 
 @Component({
@@ -10,11 +11,11 @@ import { Router } from '@angular/router';
 })
 export class SkillsPopupComponent implements OnInit {
   // newSkill = '';
-  newSkillCreated = false;
+  // newSkillCreated = false;
 
   skills = [ ];
 
-  // constructor(private http: HttpClient) { }
+  constructor(private http: Http) { }
 
   //grabs any value inside of form
   onSubmit(value:any) {
@@ -22,13 +23,11 @@ export class SkillsPopupComponent implements OnInit {
     this.skills.push(value);
     console.log(this.skills);
 
-    this.newSkillCreated = true;
-
-    // const skills = new FormData();
-    // skills.append('skillsArray', value)
-    // this.http.post('mongo ds213209.mlab.com:13209/merits -u <dbuser> -p <dbpassword>', skills).subscribe(res => {
-    //   console.log(res);
-    // })
+    const skills = new FormData();
+    skills.append('skillsArray', value)
+    this.http.post('mongo ds213209.mlab.com:13209/merits -u meritsadmin -p password', skills).subscribe(res => {
+      console.log(res);
+    })
   }
 
   ngOnInit() {
