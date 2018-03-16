@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RoutingModule } from './app.routes';
 import { FormsModule } from '@angular/forms';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
@@ -30,7 +30,7 @@ import { ExperiencePopupComponent } from './components/profile/experience/experi
 import { EducationPopupComponent } from './components/profile/education/education-popup/education-popup.component';
 
 import { AuthService } from './services/auth.service';
-// import { ValidateService } from './services/validate.service';
+import { ValidateService } from './services/validate.service';
 
 
 
@@ -64,10 +64,10 @@ import { AuthService } from './services/auth.service';
     BrowserModule,
     RoutingModule,
     FormsModule,
-    HttpClient
+    HttpModule
   ],
-    // add Validate Service to providers
-  providers: [ AuthService],
+
+  providers: [AuthService, ValidateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
