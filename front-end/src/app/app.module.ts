@@ -28,6 +28,7 @@ import { AchievementsPopupComponent } from './components/profile/achievements/ac
 import { ExperiencePopupComponent } from './components/profile/experience/experience-popup/experience-popup.component';
 import { EducationPopupComponent } from './components/profile/education/education-popup/education-popup.component';
 
+// import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { EducationPopupComponent } from './components/profile/education/educatio
     BrowserModule,
     RoutingModule,
     FormsModule
+    // HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -101,12 +101,13 @@
                 <p>Some other really useful skill</p>
               </div> -->
 
-              <div *ngIf="newSkillCreated"class="skill-bubble">
+              <div  *ngFor="let skill of skills" class="skill-bubble">
                 <div class="close">
                   <i class="fas fa-times"></i>
                 </div>
-                <p>{{ newSkill }}</p>
+                <p>{{ skill }}</p>
               </div>
+              <!-- *ngIf="newSkillCreated" -->
   
           </div>
           <div class="btn-section">
