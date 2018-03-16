@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SkillsPopupComponent } from './skills-popup/skills-popup.component';
 
 @Component({
   selector: 'app-skills',
@@ -7,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   // Properties
-
+  // skills = SkillsPopupComponent().skills;
   // Methods
   constructor() { }
 
   ngOnInit() {
-
+    console.log(SkillsPopupComponent);
   }
 
   showModal() {

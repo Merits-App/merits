@@ -1,13 +1,14 @@
 <div class="popup-grid">
-    <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit()" class="popup-modal form">
       <div class="close-modal-btn" (click)="hideProjectsModal()">
         <i class="fas fa-times close-btn"></i>
       </div>
       <div class="proj-inputs">
-        <div class="add-img">
+        <div class="add-img" type="file" placeholder="Add a Project Image">
             <i class="fas fa-plus plus-sign fa-3x"></i>
             <p>Add a Project Image</p>
         </div>
+        <input type="file" (change)="onFileSelected($event)">
         <div class="input-fields">
           <input class="form-input first-name"type="text" placeholder="Title of Project">
           <textarea class="form-textarea" rows="5" placeholder="Description of Project"></textarea>

@@ -29,6 +29,7 @@ import { AchievementsPopupComponent } from './components/profile/achievements/ac
 import { ExperiencePopupComponent } from './components/profile/experience/experience-popup/experience-popup.component';
 import { EducationPopupComponent } from './components/profile/education/education-popup/education-popup.component';
 
+// import { HttpClientModule } from '@angular/common/http'
 import { AuthService } from './services/auth.service';
 import { ValidateService } from './services/validate.service';
 
@@ -64,6 +65,7 @@ import { ValidateService } from './services/validate.service';
     BrowserModule,
     RoutingModule,
     FormsModule,
+    // HttpClientModule
     HttpModule
   ],
 

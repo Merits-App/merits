@@ -25,33 +25,9 @@
     <!-- Other Skills -->
     <div class="other-section">
         <h2>Other Skills</h2>
-        <div class="skills-container">
+        <div *ngFor="let skill of skills" class="skills-container"> 
             <div class="skill-bubble">
-                <p>coding</p>
-            </div>
-            <div class="skill-bubble">
-                <p>Adobe Photoshop</p>
-            </div>
-            <div class="skill-bubble">
-                <p>Putting on a screen protector without having any dust or air bubble under</p>
-            </div>
-            <div class="skill-bubble">
-                <p>kdjflsd</p>
-            </div>
-            <div class="skill-bubble">
-                <p>Being awesome</p>
-            </div>
-            <div class="skill-bubble">
-                <p>Adobe Illustrator</p>
-            </div>
-            <div class="skill-bubble">
-                <p>Adobe After Effects</p>
-            </div>
-            <div class="skill-bubble">
-                <p>Some other skill</p>
-            </div>
-            <div class="skill-bubble">
-                <p>Some other really useful skill</p>
+                <p>{{ skill }}</p>
             </div>
         </div>
     </div>
