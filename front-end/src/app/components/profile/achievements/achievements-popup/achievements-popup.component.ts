@@ -11,8 +11,8 @@ export class AchievementsPopupComponent implements OnInit {
 
   ngOnInit() {
   }
-  hideAchieveModal(){
+  hideAchieveModal() {
     const achievePopup = document.querySelector('#achieve-popup');
-    achievePopup.setAttribute("style", "display:none");
+    achievePopup.setAttribute('style', 'display:none');
   }
 }

@@ -12,8 +12,8 @@ export class EducationPopupComponent implements OnInit {
   ngOnInit() {
   }
   // hideEduModal
-  hideEduModal(){
+  hideEduModal() {
     const eduPopup = document.querySelector('#education-popup');
-    eduPopup.setAttribute("style", "display:none");
+    eduPopup.setAttribute('style', 'display:none');
   }
 }
