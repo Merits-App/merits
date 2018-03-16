@@ -12,13 +12,12 @@ router.get('/', (req, res) => {
 });
 
 //New Register
-router.post('/', (req, res, next) => {
+router.post('/app-register', (req, res, next) => {
 
     let newUser = new User ({
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
-        username: req.body.username,
         password: req.body.password,
         city: req.body.city,
         state: req.body.state,
@@ -37,10 +36,10 @@ router.post('/', (req, res, next) => {
 
 //Authentication with Passport
 router.post('/app-authenticate', (req, res, next) => {
-    const username = req.body.username;
+    const email = req.body.email;
     const password = req.body.password;
 
-    User.getUserByUsername(username, (err, user) => {
+    User.getUserByEmail(email, (err, user) => {
         if(err) throw err;
         if(!user) {
             return res.json({success: false, msg: 'User not found'});

@@ -63,6 +63,9 @@ i.nav-icon.fa-arrow-left {
     cursor: pointer;
     margin: 10px;
 }
+.close-modal-btn i{
+    font-size: 40px;
+}
 
 .close-btn {
     color: #fff;

@@ -1,19 +1,19 @@
-<div class="login-wrap">
-  <!-- <form action="" method="get"> -->
-    <!-- username -->
-    <div class="username-section">
-      <input class="form-input" type="text" name="username" id="username" placeholder="Username">
+<form #loginForm="ngForm" (ngSubmit)="onLoginSubmit()">
+  <div class="form-group login-wrap">
+    <!--Email-->
+    <div class="email-section">
+      <input class="form-input" type="text" name="email" id="email" [(ngModel)]="email" placeholder="Email">
     </div>
-    <!-- password -->
+    <!--password -->
     <div class="pass-section">
-      <input class="form-input" type="password" name="password" id="password" placeholder="Password">
+      <input class="form-input" type="password" name="password" id="password" [(ngModel)]="password" placeholder="Password">
     </div>
     <!-- submission -->
     <div class="btn-section">
-      <button type="submit" routerLink="/app-profile">Login</button>
+      <button type="submit">Login</button>
     </div>
     <div class="forgot-section">
       <p>Reset Password</p>
     </div>
-  <!-- </form> -->
-</div>
+  </div>
+</form>

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects-popup.component.css']
 })
 export class ProjectsPopupComponent implements OnInit {
+  projectImg = null;
 
   constructor() { }
 
@@ -18,4 +19,12 @@ export class ProjectsPopupComponent implements OnInit {
     console.log('works');
   }
 
+  onFileSelected(event){
+    this.projectImg = event.target.files[0];
+    console.log(this.projectImg);
+
+    var imgBackground = document.querySelector('.add-img');
+
+    imgBackground.setAttribute("style", "background: url(this.projectImg)");
+  }
 }
