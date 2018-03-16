@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+// import { HttpClient, HttpHeaders } from '@angular/common/http';
 import 'rxjs/add/operator/map';
+import { Http, Headers } from '@angular/http';
+
 
 
 @Injectable()
@@ -8,7 +10,9 @@ export class AuthService {
   authToken: any;
   user: any;
 
-  constructor(private http: HttpHeaders) { }
+  constructor(private http: Http) { }
+//  Ask JR for help with these errors//
+
 
   registerUser(user) {
     const headers = new Headers();
