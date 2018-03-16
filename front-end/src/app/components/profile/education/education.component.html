@@ -4,8 +4,8 @@
 <div class="header">
   <i class="fas fa-eye eye-icon "></i>
   <div class="edit-btn-cont" (click)="showEduModal()">
-    <i class="fas fa-edit edit-icon"></i>
-  </div>
+      <i class="fas fa-plus edit-icon"></i>
+    </div>
   <h1 class="section-header-text">Education</h1>
 </div>
 
@@ -13,8 +13,10 @@
 <div class="eduSection">
   <label class="date-text education-date">Jan 2016 - Dec 2017</label>
   <div class="econtent">
-    <h3 class="subhead-1-text">California University - Fresno</h3>
-    <h4 class="subhead-2-text">Computer Science</h4>
+    <h3 class="subhead-1-text">California University - Fresno
+        <i class="fas fa-edit edit-popup " (click)="showEduEditModal()"></i> 
+    </h3>
+    <h4 class="subhead-2-text">Computer Science  <b> Masters </b></h4>
     <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam, ipsum sint iusto vero temporibus unde harum at
       odio in fuga, eaque commodi voluptate obcaecati dignissimos quae illo officia autem!</p>
   </div>
@@ -22,7 +24,9 @@
 <div class="eduSection">
   <label class="date-text education-date">Jan 2014 - Dec 2015</label>
   <div class="econtent">
-    <h3 class="subhead-1-text">Fresno University - Fresno</h3>
+    <h3 class="subhead-1-text">Fresno University - Fresno
+        <i class="fas fa-edit edit-popup "></i>
+    </h3>
     <h4 class="subhead-2-text">Diploma</h4>
     <p class="body-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam, ipsum sint iusto vero temporibus unde harum at
       odio in fuga, eaque commodi voluptate obcaecati dignissimos quae illo officia autem!</p>

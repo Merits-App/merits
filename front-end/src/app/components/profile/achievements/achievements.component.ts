@@ -23,4 +23,4 @@ export class AchievementsComponent implements OnInit {
       // const achievehidePopup = document.querySelector('#achieve-newPopup');
       // achievehidePopup.setAttribute("style", "display:none");
     }
-}
+  }

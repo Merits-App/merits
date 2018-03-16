@@ -18,7 +18,7 @@ export class AchievementsPopupComponent implements OnInit {
     const achieveEditPopup = document.querySelector("#achieve-editPopup");
     achieveEditPopup.setAttribute("style", "display:none");
   }
-  
+
   update() {
     const updateAchievements = {
       AwardTitle: this.awardTitle
