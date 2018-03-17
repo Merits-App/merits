@@ -15,4 +15,8 @@ export class EducationComponent implements OnInit {
     const eduPopup = document.querySelector('#education-popup');
     eduPopup.setAttribute('style', 'display:flex; align-items:center;');
     }
+    showEduEditModal() {
+      const eduEditPopup = document.querySelector('#education-editPopup');
+      eduEditPopup.setAttribute('style', 'display:flex; align-items:center;');
+    }
 }

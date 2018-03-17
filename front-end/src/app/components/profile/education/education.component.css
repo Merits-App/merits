@@ -16,7 +16,15 @@
   right: 0;
   transform: scale(1.8);
 }
-
+.edit-popup {
+  color: darkgoldenrod;
+  transform: scale(.8);
+}
+.edit-popup:hover {
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s;
+}
 .edit-icon:hover {
   cursor: pointer;
   transform: scale(2);

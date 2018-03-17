@@ -1,10 +1,11 @@
-<div class="popup-grid">
-  <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
-    <div class="close-modal-btn" (click)="hideEduModal()"> 
-      <i class="fas fa-times close-btn"></i>
-    </div>
-    <div class="inputs">
-        <h4 class="form-input-label eduLabel">Date of Completion</h4>
+<div id="education-popup" class="popup-bg">
+  <div class="popup-grid">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
+      <div class="close-modal-btn" (click)="hideEduModal()">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <div class="inputs">
+        <h4 class="form-input-label eduLabel">Date of Start</h4>
         <select class="edustartMonth" name="monthEnd">
           <option>MM</option>
           <option>Jan</option>
@@ -18,6 +19,37 @@
           <option>2002</option>
         </select>
         <input type="text" class="form-input insName" placeholder="Name of Institution">
+        <h4 class="form-input-label expEndLabel">Date of completion</h4>
+        <select name="endMonth" class="endMonth">
+          <option selected value="">Month</option>
+          <option>January</option>
+          <option>Febraury</option>
+          <option selected>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+        <select name="endYear" class="endYear">
+          <option selected value="">Month</option>
+          <option>2010</option>
+          <option>2011</option>
+          <option selected>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2011</option>
+        </select>
         <div class="current">
           <input type="checkbox">
           <label class="form-input-label">Current :</label>
@@ -31,8 +63,94 @@
         <textarea type="text" class="textarea-styled eduText" maxlength="500" placeholder="Additional info (Optional)"></textarea>
       </div>
       <div class="button-section">
-          <button>Save!</button>
+        <button>Save!</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div id="education-editPopup" class="popup-bg">
+  <div class="popup-grid">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
+      <div class="close-modal-btn" (click)="hideEduModal()">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <div class="inputs">
+        <h4 class="form-input-label eduLabel">Date of Completion</h4>
+        <select class="edustartMonth" name="monthEnd">
+          <option value="">Month</option>
+          <option selected>January</option>
+          <option>Febraury</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+        <select class="edustartYear" name="yrEnd">
+          <option>2010</option>
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option selected>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+        </select>
+        <select name="endMonth" class="endMonth">
+          <option value="">Month</option>
+          <option>January</option>
+          <option>Febraury</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option selected>December</option>
+        </select>
+        <select name="endYear" class="endYear">
+          <option value="">Year</option>
+          <option>2010</option>
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option selected>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+        </select>
+        <input type="text" class="form-input insName" placeholder="Name of Institution" value="California University - Fresno">
+        <div class="current">
+          <input type="checkbox">
+          <label class="form-input-label">Current :</label>
         </div>
-        </form>
-        
+        <input type="text" class="form-input study" placeholder="Field of Study" value="Computer Science">
+        <select name="degreeSelect" class="degree" placeholder="Degree">
+          <option>Masters</option>
+          <option>Under Graduate</option>
+          <option>High School</option>
+        </select>
+        <textarea type="text" class="textarea-styled eduText" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+      </div>
+      <div class="button-section">
+        <button>Save!</button>
+      </div>
+    </form>
+  </div>
 </div>

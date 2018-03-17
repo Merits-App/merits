@@ -1,3 +1,11 @@
+.popup-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10000;
+  display: none;
+}
 .close-btn {
     color: #fff;
     width: 100%;
@@ -25,9 +33,9 @@
     grid-template-areas: 
     "eduLabel eduLabel  . . ."
     "edustartMonth edustartYear  insName insName insName"
-    "current .  study study degree"
-    ". .  eduText eduText eduText";
-    
+    "expEndLabel expEndLabel study study degree"
+    "endMonth endYear . . ."
+    "current . eduText eduText eduText";
   }
   .eduLabel {
     grid-area: eduLabel;
@@ -62,6 +70,7 @@
     border: none;
     border-radius: 8px;
     grid-area: eduText;
+    font: Tahoma, sans-serif;
   }
   .close-modal-btn{
     height: 25px;
@@ -87,5 +96,18 @@
     border: none;
     color: #757575;
     cursor: pointer;
+  }
+  .expEndLabel {
+    grid-area: expEndLabel;
+  }
+  .endMonth {
+    border: none;
+    border-radius: 8px;
+    grid-area: endMonth;
+  }
+  .endYear {
+    border: none;
+    border-radius: 8px;
+    grid-area: endYear;
   }
   

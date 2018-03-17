@@ -1,38 +1,84 @@
 <!--Achievement/Awards Popup modal Begins -->
-<div class="popup-grid">
-  <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
-    <div class="close-modal-btn" (click)="hideAchieveModal()">
-      <i class="fas fa-times close-btn"></i>
-    </div>
-    <div class="inputs">
-      <h4 class="form-input-label awardReciept">Date of reciept</h4>
-      <select name="awardMonth" class="awardMonth">
-        <option selected value="">Month</option>
-        <option>January</option>
-        <option>Febraury</option>
-        <option>March</option>
-        <option>April</option>
-        <option>May</option>
-        <option>June</option>
-        <option>July</option>
-        <option>August</option>
-        <option>September</option>
-        <option>October</option>
-        <option>November</option>
-        <option>December</option>
-      </select>
-      <select name="awardYear" class="awardYear">
-        <option selected value="">Year</option>
-        <option>2000</option>
-        <option>2001</option>
-        <option>2002</option>
-      </select>
-      <input type="text" class="form-input awardTitle" placeholder="Awards or Achievements Title">
-      <textarea type="text" class="textarea-styled addInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
-    </div>
-    <div class="btn-section">
-      <button class="submit-btn" type="submit">Save Changes</button>
-    </div>
-  </form>
+<div id="achieve-newPopup" class="popup-bg">
+  <div class="popup-grid">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
+      <div id="newAwardView">
+        <div class="close-modal-btn" (click)="hideAchieveModal()">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <div class="inputs">
+          <h4 class="form-input-label awardReciept">Date of reciept</h4>
+          <select name="awardMonth" class="awardMonth">
+            <option selected value="">Month</option>
+            <option>January</option>
+            <option>Febraury</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+          <select name="awardYear" class="awardYear">
+            <option selected value="">Year</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+          </select>
+          <input type="text" class="form-input awardTitle" placeholder="Awards or Achievements Title">
+          <textarea type="text" class="textarea-styled addInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+        </div>
+        <div class="btn-section">
+          <button class="submit-btn" type="submit">Save Changes</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="achieve-editPopup" class="popup-bg">
+  <div class="popup-grid">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit" class="popup-modal form">
+      <div id="editAwardView" >
+        <div class="close-modal-btn" (click)="hideAchieveModal()">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <div class="inputs">
+          <h4 class="form-input-label awardReciept">Date of reciept</h4>
+          <select name="awardMonth" ng-model="awardMonth" class="awardMonth">
+            <option selected value="">Month</option>
+            <option>January</option>
+            <option>Febraury</option>
+            <option selected >March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+          <select name="awardYear" ng-model="awardYear" class="awardYear">
+            <option selected value="2018">2018</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+          </select>
+          <input type="text" name="awardTitle" class="form-input awardTitle" [(ngModel)]="awardTitle" value="Boo Brilliant Designer">
+          <textarea type="text" class="textarea-styled addInfo" maxlength="500" placeholder="Additional info (Optional)">Delivered the project on time with zero errors!!!</textarea>
+        </div>
+        <div class="btn-section">
+          <button class="submit-btn" type="submit" (click)="update()">Save Changes</button>
+        </div>
+        <div class="alert alert-success" *ngIf="updateOnSuccess">Great achievement! Record updated!!</div>
+      </div> 
+    </form>
+  </div>
 </div>
 <!--Achievement/Awards Popup modal ends -->
