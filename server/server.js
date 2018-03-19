@@ -23,6 +23,9 @@ mongoose.connection.on('error', (err) => {
     console.log('Database Connection Error: ' +err);
 });
 
+//Set Static Folder
+app.use(express.static(path.join( __dirname, 'public' )));
+
 // Parsers for POST data 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -40,18 +43,14 @@ require('./config/passport')(passport);
 app.use('/api', api);
 
 // Index Route
-app.get('/', (req, res) => {
-    res.send('Invalid Endpoint');
-});
+// app.get('/', (req, res) => {
+//     res.send('Invalid Endpoint');
+// });
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
-
-
-//Set Static Folder
-app.use(express.static(path.join( __dirname, 'public' )));
 
 //Set Port 
 const port = 3000;

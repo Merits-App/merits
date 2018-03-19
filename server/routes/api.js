@@ -12,13 +12,14 @@ router.get('/', (req, res) => {
 });
 
 //New Register
-router.post('/app-register', (req, res, next) => {
+router.post('/app-home', (req, res, next) => {
 
     let newUser = new User ({
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
-        password: req.body.password,
+        createPassword: requ.body.password,
+        confirmPassword: req.body.password,
         city: req.body.city,
         state: req.body.state,
     });
@@ -35,7 +36,7 @@ router.post('/app-register', (req, res, next) => {
 });
 
 //Authentication with Passport
-router.post('/app-authenticate', (req, res, next) => {
+router.post('/app-home', (req, res, next) => {
     const email = req.body.email;
     const password = req.body.password;
 

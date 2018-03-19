@@ -16,12 +16,11 @@ export class RegisterComponent implements OnInit {
   city: String;
   state: String;
   confirmPassword: String;
-  
+
   constructor(
     private validateService: ValidateService,
     private authService: AuthService,
-  private router: Router) 
-    {
+    private router: Router) {
 
     }
 
@@ -38,7 +37,7 @@ export class RegisterComponent implements OnInit {
       city: this.city,
       state: this.state
     };
-    
+
   if (!this.validateService.validateRegister(user)) {
     console.log('Please fill in all fields');
   }
@@ -47,13 +46,14 @@ export class RegisterComponent implements OnInit {
     console.log('Please enter a valid email');
     return false;
   }
-  
+
   this.authService.registerUser(user).subscribe(data => {
-    if(data === true) {
+    if (data === true) {
       console.log('You are now registered!');
       this.router.navigate(['/app-profile']);
     } else {
         console.log('Something went wrong!');
       }
   });
+}
 }
